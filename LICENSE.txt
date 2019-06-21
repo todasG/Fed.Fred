@@ -131,6 +131,3 @@ Find out the service status of NuGet.org and its related services.
 
 FAQ
 Read the Frequently Asked Questions about NuGet and see if your question made the list.
-
-
-© Microsoft 2019 - About - Terms of Use - Privacy Policy - Trademarks 
