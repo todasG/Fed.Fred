@@ -30,7 +30,7 @@ IEnumerable<Release> releases = fred.GetReleases();<br>
 foreach (var release in releases){}
 
 <b><u>GetRelease</u></b><br>
-var release = fred.GetRelease(int);
+var release = fred.GetRelease(int ReleaseID);
 
 <b><u>GetReleasesDates</u></b><br>
 IEnumerable<ReleaseDate> GetReleasesDates();
@@ -38,5 +38,17 @@ IEnumerable<ReleaseDate> GetReleasesDates();
 <b><u>GetReleaseDates</u></b><br>
 IEnumerable<ReleaseDate> GetReleaseDates(int releaseId);
 
+<b><u>GetReleaseSeries</u></b><br>
+IEnumerable<Series> GetReleaseSeries(int releaseId);
 
+<b><u>GetReleaseSources</u></b><br>
+IEnumerable<Series> GetReleaseSources(int releaseId);
 
+<b><u>GetSeries</u></b><br>
+var release = fred.GetSeries(string SeriesID);
+
+<b><u>GetSeriesCategories</u></b><br>
+IEnumerable<Category> GetSeriesCategories(string SeriesId);
+
+<b><u>GetSeriesRelease</u></b><br>
+var series = fred.GetSeriesRelease(string SeriesID);
