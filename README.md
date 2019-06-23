@@ -38,6 +38,7 @@ IEnumerable<Release> releases = fred.GetReleases();
 
 foreach (var release in releases)
 	{
+	
 	}
 
 GetRelease > GetRelease(int releaseId);
