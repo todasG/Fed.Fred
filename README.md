@@ -41,5 +41,3 @@ foreach (var release in releases){}
 <b><u>GetRelease</u></b>
 
 var release = fred.GetRelease(int);
-
-
