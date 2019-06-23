@@ -11,6 +11,7 @@ If this project help you reduce time to develop, you can give me a cup of coffee
 ## Installation:
 
 Install package via Nuget: https://www.nuget.org/packages/Fed.Fred/
+
 PM> Install-Package Fed.Fred
 FRED API key is required. Obtain key from http://api.stlouisfed.org/api_key.html
 
