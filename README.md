@@ -36,8 +36,8 @@ GetReleases >
 
 IEnumerable<Release> releases = fred.GetReleases();
 
-foreach (var release in releases)\n
-	{\n\n
+foreach (var release in releases)<br/>
+	{<br/>
 	}
 
 GetRelease > GetRelease(int releaseId);
