@@ -32,13 +32,13 @@ var fred = new Fred("api key", RequestCacheLevel.BypassCache); //Default Option
 
 Sample API Calls:
 
-<b>GetReleases</b> >
+<b><u>GetReleases</u></b>
 
 IEnumerable<Release> releases = fred.GetReleases();
 
 foreach (var release in releases){}
 
-<b>GetRelease</b> >
+<b><u>GetRelease</u></b>
 
 var release = fred.GetRelease(int);
 
