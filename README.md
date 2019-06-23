@@ -10,16 +10,16 @@ If this project help you reduce time to develop, you can give me a cup of coffee
 
 ## Installation:
 
-Install package via Nuget: https://www.nuget.org/packages/Fed.Fred/<br>
-PM> Install-Package Fed.Fred<br>
+Install package via Nuget: https://www.nuget.org/packages/Fed.Fred/<br><br>
+PM> Install-Package Fed.Fred<br><br>
 FRED API key is required. Obtain key from http://api.stlouisfed.org/api_key.html
 
 ## Instructions:
 
-Create a Fed.Fred object.<br>
+Create a Fed.Fred object.<br><br>
 var fred = new Fred("FRED API key");
 
-The library does not cache calls from the FRED database. You can change cache option.<br>
+The library does not cache calls from the FRED database. You can change cache option.<br><br>
 var fred = new Fred("api key", RequestCacheLevel.BypassCache); //Default Option
 
 ## Sample Calls
