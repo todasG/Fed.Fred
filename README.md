@@ -24,7 +24,7 @@ var fred = new Fred("api key", RequestCacheLevel.BypassCache); //Default Option
 
 ## Sample Calls
 
-<b>Releases<b><br><br>
+Releases
   
 <b><u>GetReleases</u></b><br>
 IEnumerable\<Release\> releases = fred.GetReleases();<br>
@@ -52,7 +52,7 @@ IEnumerable\<Tags\> GetReleaseTags(int releaseId);
 IEnumerable\<Tags\> GetReleaseRelatedTags(int releaseId);
 
 
-<b>Series<b><br><br>
+Series
   
 <b><u>GetSeries</u></b><br>
 var release = fred.GetSeries(string seriesId);
