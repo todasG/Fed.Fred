@@ -23,7 +23,7 @@ Create a Fed.Fred object.
 
 var fred = new Fred("FRED API key");
 
-The library does not caches calls from the FRED database. You can change cache option.
+The library does not cache calls from the FRED database. You can change cache option.
 
 var fred = new Fred("api key", RequestCacheLevel.BypassCache); //Default Option
 
