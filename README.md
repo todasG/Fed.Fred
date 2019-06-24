@@ -62,3 +62,28 @@ List\<Category\> GetSeriesCategories(string seriesId);
 
 <b><u>GetSeriesRelease</u></b><br>
 var series = fred.GetSeriesRelease(string seriesId);
+
+
+<u>Sources</u>
+  
+<b><u>GetSources</u></b><br>
+List\<Source\> GetSources();
+
+<b><u>GetSource</u></b><br>
+List\<Source\> GetSource(int sourceID);
+
+<b><u>GetSourceReleases</u></b><br>
+List\<Source\> GetSource(int sourceID);
+
+
+<u>Tags</u>
+  
+<b><u>GetTags</u></b><br>
+List\<Tags\> GetTags();
+
+<b><u>GetRelatedTags</u></b><br>
+List\<Tags\> GetSource(string tag_Names);
+
+<b><u>GetTagSeries</u></b><br>
+List\<Series\> GetTagSeries(string tag_Names);
+
