@@ -75,7 +75,8 @@ List\<Source\> GetSource(int sourceID);
 <b><u>GetSourceReleases</u></b><br>
 List\<Source\> GetSource(int sourceID);
 
-<u>Tags</u>
+
+<i>Tags</i>
   
 <b><u>GetTags</u></b><br>
 List\<Tags\> GetTags();
