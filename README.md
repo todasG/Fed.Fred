@@ -27,29 +27,29 @@ var fred = new Fred("api key", RequestCacheLevel.BypassCache); //Default Option
 <u>Releases</u>
   
 <b><u>GetReleases</u></b><br>
-IEnumerable\<Release\> releases = fred.GetReleases();<br>
+List\<Release\> releases = fred.GetReleases();<br>
 foreach (var release in releases){}
 
 <b><u>GetReleasesDates</u></b><br>
-IEnumerable\<ReleaseDate\> GetReleasesDates();
+List\<ReleaseDate\> GetReleasesDates();
 
 <b><u>GetRelease</u></b><br>
 var release = fred.GetRelease(int releaseId);
 
 <b><u>GetReleaseDates</u></b><br>
-IEnumerable\<ReleaseDate\> GetReleaseDates(int releaseId);
+List\<ReleaseDate\> GetReleaseDates(int releaseId);
 
 <b><u>GetReleaseSeries</u></b><br>
 IEnumerable\<Series\> GetReleaseSeries(int releaseId);
 
 <b><u>GetReleaseSources</u></b><br>
-IEnumerable\<Series\> GetReleaseSources(int releaseId);
+List\<Series\> GetReleaseSources(int releaseId);
 
 <b><u>GetReleaseTags</u></b><br>
-IEnumerable\<Tags\> GetReleaseTags(int releaseId);
+List\<Tags\> GetReleaseTags(int releaseId);
 
 <b><u>GetReleaseRelatedTags</u></b><br>
-IEnumerable\<Tags\> GetReleaseRelatedTags(int releaseId);
+List\<Tags\> GetReleaseRelatedTags(int releaseId);
 
 
 <u>Series</u>
@@ -58,7 +58,7 @@ IEnumerable\<Tags\> GetReleaseRelatedTags(int releaseId);
 var release = fred.GetSeries(string seriesId);
 
 <b><u>GetSeriesCategories</u></b><br>
-IEnumerable\<Category\> GetSeriesCategories(string seriesId);
+List\<Category\> GetSeriesCategories(string seriesId);
 
 <b><u>GetSeriesRelease</u></b><br>
 var series = fred.GetSeriesRelease(string seriesId);
