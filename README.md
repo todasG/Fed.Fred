@@ -24,7 +24,7 @@ var fred = new Fred("api key", RequestCacheLevel.BypassCache); //Default Option
 
 ## Sample Calls
 
-<u>Releases</u>
+<i>Releases</i>
   
 <b><u>GetReleases</u></b><br>
 List\<Release\> releases = fred.GetReleases();<br>
@@ -52,7 +52,7 @@ List\<Tags\> GetReleaseTags(int releaseId);
 List\<Tags\> GetReleaseRelatedTags(int releaseId);
 
 
-<u>Series</u>
+<i>Series</i>
   
 <b><u>GetSeries</u></b><br>
 var release = fred.GetSeries(string seriesId);
@@ -64,7 +64,7 @@ List\<Category\> GetSeriesCategories(string seriesId);
 var series = fred.GetSeriesRelease(string seriesId);
 
 
-<u>Sources</u>
+<i>Sources</i>
   
 <b><u>GetSources</u></b><br>
 List\<Source\> GetSources();
