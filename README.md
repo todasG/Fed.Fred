@@ -27,29 +27,29 @@ var fred = new Fred("api key", RequestCacheLevel.BypassCache); //Default Option
 <i>Releases</i>
   
 <b><u>GetReleases</u></b><br>
-List\<Release\> releases = fred.GetReleases();<br>
+IEnumerable\<Release\> releases = fred.GetReleases();<br>
 foreach (var release in releases){}
 
 <b><u>GetReleasesDates</u></b><br>
-List\<ReleaseDate\> GetReleasesDates();
+IEnumerable\<ReleaseDate\> GetReleasesDates();
 
 <b><u>GetRelease</u></b><br>
 var release = fred.GetRelease(int releaseId);
 
 <b><u>GetReleaseDates</u></b><br>
-List\<ReleaseDate\> GetReleaseDates(int releaseId);
+IEnumerable\<ReleaseDate\> GetReleaseDates(int releaseId);
 
 <b><u>GetReleaseSeries</u></b><br>
 IEnumerable\<Series\> GetReleaseSeries(int releaseId);
 
 <b><u>GetReleaseSources</u></b><br>
-List\<Series\> GetReleaseSources(int releaseId);
+IEnumerable\<Series\> GetReleaseSources(int releaseId);
 
 <b><u>GetReleaseTags</u></b><br>
-List\<Tags\> GetReleaseTags(int releaseId);
+IEnumerable\<Tags\> GetReleaseTags(int releaseId);
 
 <b><u>GetReleaseRelatedTags</u></b><br>
-List\<Tags\> GetReleaseRelatedTags(int releaseId);
+IEnumerable\<Tags\> GetReleaseRelatedTags(int releaseId);
 
 
 <i>Series</i>
@@ -58,7 +58,7 @@ List\<Tags\> GetReleaseRelatedTags(int releaseId);
 var release = fred.GetSeries(string seriesId);
 
 <b><u>GetSeriesCategories</u></b><br>
-List\<Category\> GetSeriesCategories(string seriesId);
+IEnumerable\<Category\> GetSeriesCategories(string seriesId);
 
 <b><u>GetSeriesRelease</u></b><br>
 var series = fred.GetSeriesRelease(string seriesId);
@@ -67,23 +67,23 @@ var series = fred.GetSeriesRelease(string seriesId);
 <i>Sources</i>
   
 <b><u>GetSources</u></b><br>
-List\<Source\> GetSources();
+IEnumerable\<Source\> GetSources();
 
 <b><u>GetSource</u></b><br>
-List\<Source\> GetSource(int sourceID);
+IEnumerable\<Source\> GetSource(int sourceID);
 
 <b><u>GetSourceReleases</u></b><br>
-List\<Source\> GetSource(int sourceID);
+IEnumerable\<Source\> GetSource(int sourceID);
 
 
 <i>Tags</i>
   
 <b><u>GetTags</u></b><br>
-List\<Tags\> GetTags();
+IEnumerable\<Tags\> GetTags();
 
 <b><u>GetRelatedTags</u></b><br>
-List\<Tags\> GetSource(string tag_Names);
+IEnumerable\<Tags\> GetSource(string tag_Names);
 
 <b><u>GetTagSeries</u></b><br>
-List\<Series\> GetTagSeries(string tag_Names);
+IEnumerable\<Series\> GetTagSeries(string tag_Names);
 
