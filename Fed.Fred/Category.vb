@@ -1,4 +1,4 @@
-
+﻿
 Imports System
 Imports System.Collections
 Imports System.Collections.Generic
@@ -8,35 +8,35 @@ Imports System.Linq
 Public Class Category
 
 
-    Private pID As Integer
-    Private pName As String
-    Private pParentID As Integer
+    Friend _Category_Id As Integer
+    Friend _Category_Parent_Id As String
+    Friend _Category_Name As Integer
 
-    Public Property Category_Id() As Integer
+    Public ReadOnly Property Category_Id() As Integer
         Get
-            Return pID
+            Return _Category_Id
         End Get
-        Set(ByVal value As Integer)
-            pID = value
-        End Set
+        'Set(ByVal value As Integer)
+        '    pID = value
+        'End Set
     End Property
 
-    Public Property Category_Parent_Id() As Integer
+    Public ReadOnly Property Category_Parent_Id() As Integer
         Get
-            Return pParentID
+            Return _Category_Parent_Id
         End Get
-        Set(ByVal value As Integer)
-            pParentID = value
-        End Set
+        'Set(ByVal value As Integer)
+        '    pParentID = value
+        'End Set
     End Property
 
-    Public Property Category_Name() As String
+    Public ReadOnly Property Category_Name() As String
         Get
-            Return pName
+            Return _Category_Name
         End Get
-        Set(ByVal value As String)
-            pName = value
-        End Set
+        'Set(ByVal value As String)
+        '    pName = value
+        'End Set
     End Property
 
 End Class
