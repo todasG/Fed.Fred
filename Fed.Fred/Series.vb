@@ -6,26 +6,26 @@ Imports System.Linq
 
 Public Class Series
 
-        Private pID As String
-        Private pTitle As String
-        Private pPressRelease As String
-        Private pRealtimeStart As DateTime
-        Private pRealtimeEnd As DateTime
+    Friend _Id As String
+    Friend _Title As String
+    Friend _PressRelease As String
+    Friend _RealtimeStart As DateTime
+    Friend _RealtimeEnd As DateTime
 
-        Private pObservation_start As DateTime
-        Private pObservation_end As DateTime
-        Private pFrequency As String
-        Private pFrequency_short As String
+    Friend _Observation_start As DateTime
+    Friend _Observation_end As DateTime
+    Friend _Frequency As String
+    Friend _Frequency_short As String
 
-        Private punits As String
-        Private punits_short As String
-        Private pseasonal_adjustment As String
-        Private pseasonal_adjustment_short As String
+    Friend _units As String
+    Friend _units_short As String
+    Friend _seasonal_adjustment As String
+    Friend _seasonal_adjustment_short As String
 
-        Private pLast_updated As String
-        Private pPopularity As Integer
-        Private pGroup_popularity As Integer
-        Private pNotes As String
+    Friend _Last_updated As String
+    Friend _Popularity As Integer
+    Friend _Group_popularity As Integer
+    Friend _Notes As String
 
     Public Enum OrderBy
         ''' <summary>
@@ -112,162 +112,162 @@ Public Class Series
     End Enum
 
 
-    Public Property Id() As String
-            Get
-                Return pID
-            End Get
-            Set(ByVal value As String)
-                pID = value
-            End Set
-        End Property
+    Public ReadOnly Property Id() As String
+        Get
+            Return _ID
+        End Get
+        'Set(ByVal value As String)
+        '    pID = value
+        'End Set
+    End Property
 
-        Public Property Title() As String
-            Get
-                Return pTitle
-            End Get
-            Set(ByVal value As String)
-                pTitle = value
-            End Set
-        End Property
+    Public ReadOnly Property Title() As String
+        Get
+            Return _Title
+        End Get
+        'Set(ByVal value As String)
+        '    pTitle = value
+        'End Set
+    End Property
 
-        Public Property PressRelease() As String
-            Get
-                Return pPressRelease
-            End Get
-            Set(ByVal value As String)
-                pPressRelease = value
-            End Set
-        End Property
+    Public ReadOnly Property PressRelease() As String
+        Get
+            Return _PressRelease
+        End Get
+        'Set(ByVal value As String)
+        '    pPressRelease = value
+        'End Set
+    End Property
 
-        Public Property RealtimeStart() As DateTime
-            Get
-                Return pRealtimeStart
-            End Get
-            Set(ByVal value As DateTime)
-                pRealtimeStart = value
-            End Set
-        End Property
+    Public ReadOnly Property RealtimeStart() As DateTime
+        Get
+            Return _RealtimeStart
+        End Get
+        'Set(ByVal value As DateTime)
+        '    pRealtimeStart = value
+        'End Set
+    End Property
 
-        Public Property RealtimeEnd() As DateTime
-            Get
-                Return pRealtimeEnd
-            End Get
-            Set(ByVal value As DateTime)
-                pRealtimeEnd = value
-            End Set
-        End Property
+    Public ReadOnly Property RealtimeEnd() As DateTime
+        Get
+            Return _RealtimeEnd
+        End Get
+        'Set(ByVal value As DateTime)
+        '    pRealtimeEnd = value
+        'End Set
+    End Property
 
-        Public Property Observation_start() As DateTime
-            Get
-                Return pObservation_start
-            End Get
-            Set(ByVal value As DateTime)
-                pObservation_start = value
-            End Set
-        End Property
+    Public ReadOnly Property Observation_start() As DateTime
+        Get
+            Return _Observation_start
+        End Get
+        'Set(ByVal value As DateTime)
+        '    pObservation_start = value
+        'End Set
+    End Property
 
-        Public Property Observation_end() As DateTime
-            Get
-                Return pObservation_end
-            End Get
-            Set(ByVal value As DateTime)
-                pObservation_end = value
-            End Set
-        End Property
+    Public ReadOnly Property Observation_end() As DateTime
+        Get
+            Return _Observation_end
+        End Get
+        'Set(ByVal value As DateTime)
+        '    pObservation_end = value
+        'End Set
+    End Property
 
-        Public Property Frequency() As String
-            Get
-                Return pFrequency
-            End Get
-            Set(ByVal value As String)
-                pFrequency = value
-            End Set
-        End Property
+    Public ReadOnly Property Frequency() As String
+        Get
+            Return _Frequency
+        End Get
+        'Set(ByVal value As String)
+        '    pFrequency = value
+        'End Set
+    End Property
 
-        Public Property Frequency_short() As String
-            Get
-                Return pFrequency_short
-            End Get
-            Set(ByVal value As String)
-                pFrequency_short = value
-            End Set
+    Public ReadOnly Property Frequency_short() As String
+        Get
+            Return _Frequency_short
+        End Get
+        'Set(ByVal value As String)
+        '    pFrequency_short = value
+        'End Set
 
-        End Property
+    End Property
 
-        Public Property units() As String
-            Get
-                Return punits
-            End Get
-            Set(ByVal value As String)
-                punits = value
-            End Set
-        End Property
+    Public ReadOnly Property units() As String
+        Get
+            Return _units
+        End Get
+        'Set(ByVal value As String)
+        '    punits = value
+        'End Set
+    End Property
 
-        Public Property units_short() As String
-            Get
-                Return punits_short
-            End Get
-            Set(ByVal value As String)
-                punits_short = value
-            End Set
-        End Property
+    Public ReadOnly Property units_short() As String
+        Get
+            Return _units_short
+        End Get
+        'Set(ByVal value As String)
+        '    punits_short = value
+        'End Set
+    End Property
 
-        Public Property seasonal_adjustment() As String
-            Get
-                Return pseasonal_adjustment
-            End Get
-            Set(ByVal value As String)
-                pseasonal_adjustment = value
-            End Set
+    Public ReadOnly Property seasonal_adjustment() As String
+        Get
+            Return _seasonal_adjustment
+        End Get
+        'Set(ByVal value As String)
+        '    pseasonal_adjustment = value
+        'End Set
 
-        End Property
+    End Property
 
 
-        Public Property seasonal_adjustment_short() As String
-            Get
-                Return pseasonal_adjustment_short
-            End Get
-            Set(ByVal value As String)
-                pseasonal_adjustment_short = value
-            End Set
-        End Property
+    Public ReadOnly Property seasonal_adjustment_short() As String
+        Get
+            Return _seasonal_adjustment_short
+        End Get
+        'Set(ByVal value As String)
+        '    pseasonal_adjustment_short = value
+        'End Set
+    End Property
 
-        Public Property last_updated() As String
-            Get
-                Return pLast_updated
-            End Get
-            Set(ByVal value As String)
-                pLast_updated = value
-            End Set
-        End Property
+    Public ReadOnly Property last_updated() As String
+        Get
+            Return _Last_updated
+        End Get
+        'Set(ByVal value As String)
+        '    pLast_updated = value
+        'End Set
+    End Property
 
-        Public Property popularity() As Integer
-            Get
-                Return pPopularity
-            End Get
-            Set(ByVal value As Integer)
-                pPopularity = value
-            End Set
+    Public ReadOnly Property popularity() As Integer
+        Get
+            Return _Popularity
+        End Get
+        'Set(ByVal value As Integer)
+        '    pPopularity = value
+        'End Set
 
-        End Property
+    End Property
 
-        Public Property group_popularity() As Integer
-            Get
-                Return pGroup_popularity
-            End Get
-            Set(ByVal value As Integer)
-                pGroup_popularity = value
-            End Set
-        End Property
+    Public ReadOnly Property group_popularity() As Integer
+        Get
+            Return _Group_popularity
+        End Get
+        'Set(ByVal value As Integer)
+        '    pGroup_popularity = value
+        'End Set
+    End Property
 
-        Public Property notes() As String
-            Get
-                Return pNotes
-            End Get
-            Set(ByVal value As String)
-                pNotes = value
-            End Set
+    Public ReadOnly Property notes() As String
+        Get
+            Return _Notes
+        End Get
+        'Set(ByVal value As String)
+        '    pNotes = value
+        'End Set
 
-        End Property
+    End Property
 
-    End Class
+End Class

@@ -7,12 +7,12 @@ Imports System.Linq
 
 Public Class Tags
 
-    Private pName As String
-    Private pGroupId As String
-    Private pNotes As String
-    Private pCreatedDate As String
-    Private pPopularity As Integer
-    Private pSeriesCount As Integer
+    Friend _Name As String
+    Friend _GroupId As String
+    Friend _Notes As String
+    Friend _CreatedDate As String
+    Friend _Popularity As Integer
+    Friend _SeriesCount As Integer
 
 
     Public Enum Tags
@@ -74,58 +74,58 @@ Public Class Tags
         src
     End Enum
 
-    Public Property Name() As String
+    Public ReadOnly Property Name() As String
         Get
-            Return pName
+            Return _Name
         End Get
-        Set(ByVal value As String)
-            pName = value
-        End Set
+        'Set(ByVal value As String)
+        '        pName = value
+        '    End Set
     End Property
 
-    Public Property Notes() As String
+    Public ReadOnly Property Notes() As String
         Get
-            Return pNotes
+            Return _Notes
         End Get
-        Set(ByVal value As String)
-            pNotes = value
-        End Set
+        'Set(ByVal value As String)
+        '    pNotes = value
+        'End Set
     End Property
 
-    Public Property GroupId() As String
+    Public ReadOnly Property GroupId() As String
         Get
-            Return pGroupId
+            Return _GroupId
         End Get
-        Set(ByVal value As String)
-            pGroupId = value
-        End Set
+        'Set(ByVal value As String)
+        '    pGroupId = value
+        'End Set
     End Property
 
-    Public Property CreatedDate() As String
+    Public ReadOnly Property CreatedDate() As String
         Get
-            Return pCreatedDate
+            Return _CreatedDate
         End Get
-        Set(ByVal value As String)
-            pCreatedDate = value
-        End Set
+        'Set(ByVal value As String)
+        '    pCreatedDate = value
+        'End Set
     End Property
 
-    Public Property Popularity() As Integer
+    Public ReadOnly Property Popularity() As Integer
         Get
-            Return pPopularity
+            Return _Popularity
         End Get
-        Set(ByVal value As Integer)
-            pPopularity = value
-        End Set
+        'Set(ByVal value As Integer)
+        '    pPopularity = value
+        'End Set
     End Property
 
-    Public Property SeriesCount() As Integer
+    Public ReadOnly Property SeriesCount() As Integer
         Get
-            Return pSeriesCount
+            Return _SeriesCount
         End Get
-        Set(ByVal value As Integer)
-            pSeriesCount = value
-        End Set
+        'Set(ByVal value As Integer)
+        '    pSeriesCount = value
+        'End Set
     End Property
 
 End Class

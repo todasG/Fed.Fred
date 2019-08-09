@@ -89,9 +89,9 @@ Public Class Fred
                     If item IsNot Nothing Then
                         rel = New Category
                         With rel
-                            If item("id") IsNot Nothing Then .Category_Id = Convert.ToInt32(item("id"))
-                            If item("name") IsNot Nothing Then .Category_Name = Convert.ToString(item("name"))
-                            If item("parent_id") IsNot Nothing Then .Category_Parent_Id = Convert.ToInt32(item("parent_id"))
+                            If item("id") IsNot Nothing Then ._Category_Id = Convert.ToInt32(item("id"))
+                            If item("name") IsNot Nothing Then ._Category_Name = Convert.ToString(item("name"))
+                            If item("parent_id") IsNot Nothing Then ._Category_Parent_Id = Convert.ToInt32(item("parent_id"))
                         End With
                         sGetCategory.Add(rel)
                         rel = Nothing
@@ -106,9 +106,9 @@ Public Class Fred
                     If item IsNot Nothing Then
                         rel = New Category
                         With rel
-                            If item.Attributes("id") IsNot Nothing Then .Category_Id = Convert.ToInt32(item.Attributes("id").InnerText)
-                            If item.Attributes("name") IsNot Nothing Then .Category_Name = Convert.ToString(item.Attributes("name").InnerText)
-                            If item.Attributes("parent_id") IsNot Nothing Then .Category_Parent_Id = Convert.ToInt32(item.Attributes("parent_id").InnerText)
+                            If item.Attributes("id") IsNot Nothing Then ._Category_Id = Convert.ToInt32(item.Attributes("id").InnerText)
+                            If item.Attributes("name") IsNot Nothing Then ._Category_Name = Convert.ToString(item.Attributes("name").InnerText)
+                            If item.Attributes("parent_id") IsNot Nothing Then ._Category_Parent_Id = Convert.ToInt32(item.Attributes("parent_id").InnerText)
                         End With
                         sGetCategory.Add(rel)
                         rel = Nothing
@@ -190,9 +190,9 @@ EndM:
                     If item IsNot Nothing Then
                         rel = New Category
                         With rel
-                            If item("id") IsNot Nothing Then .Category_Id = Convert.ToInt32(item("id"))
-                            If item("name") IsNot Nothing Then .Category_Name = Convert.ToString(item("name"))
-                            If item("parent_id") IsNot Nothing Then .Category_Parent_Id = Convert.ToInt32(item("parent_id"))
+                            If item("id") IsNot Nothing Then ._Category_Id = Convert.ToInt32(item("id"))
+                            If item("name") IsNot Nothing Then ._Category_Name = Convert.ToString(item("name"))
+                            If item("parent_id") IsNot Nothing Then ._Category_Parent_Id = Convert.ToInt32(item("parent_id"))
                         End With
                         sGetCategoryChildren.Add(rel)
                         rel = Nothing
@@ -207,9 +207,9 @@ EndM:
                     If item IsNot Nothing Then
                         rel = New Category
                         With rel
-                            If item.Attributes("id") IsNot Nothing Then .Category_Id = Convert.ToInt32(item.Attributes("id").InnerText)
-                            If item.Attributes("name") IsNot Nothing Then .Category_Name = Convert.ToString(item.Attributes("name").InnerText)
-                            If item.Attributes("parent_id") IsNot Nothing Then .Category_Parent_Id = Convert.ToInt32(item.Attributes("parent_id").InnerText)
+                            If item.Attributes("id") IsNot Nothing Then ._Category_Id = Convert.ToInt32(item.Attributes("id").InnerText)
+                            If item.Attributes("name") IsNot Nothing Then ._Category_Name = Convert.ToString(item.Attributes("name").InnerText)
+                            If item.Attributes("parent_id") IsNot Nothing Then ._Category_Parent_Id = Convert.ToInt32(item.Attributes("parent_id").InnerText)
                         End With
                         sGetCategoryChildren.Add(rel)
                         rel = Nothing
@@ -287,9 +287,9 @@ EndM:
                     If item IsNot Nothing Then
                         rel = New Category
                         With rel
-                            If item("id") IsNot Nothing Then .Category_Id = Convert.ToInt32(item("id"))
-                            If item("name") IsNot Nothing Then .Category_Name = Convert.ToString(item("name"))
-                            If item("parent_id") IsNot Nothing Then .Category_Parent_Id = Convert.ToInt32(item("parent_id"))
+                            If item("id") IsNot Nothing Then ._Category_Id = Convert.ToInt32(item("id"))
+                            If item("name") IsNot Nothing Then ._Category_Name = Convert.ToString(item("name"))
+                            If item("parent_id") IsNot Nothing Then ._Category_Parent_Id = Convert.ToInt32(item("parent_id"))
                         End With
                         sGetCategoryRelated.Add(rel)
                         rel = Nothing
@@ -304,9 +304,9 @@ EndM:
                     If item IsNot Nothing Then
                         rel = New Category
                         With rel
-                            If item.Attributes("id") IsNot Nothing Then .Category_Id = Convert.ToInt32(item.Attributes("id").InnerText)
-                            If item.Attributes("name") IsNot Nothing Then .Category_Name = Convert.ToString(item.Attributes("name").InnerText)
-                            If item.Attributes("parent_id") IsNot Nothing Then .Category_Parent_Id = Convert.ToInt32(item.Attributes("parent_id").InnerText)
+                            If item.Attributes("id") IsNot Nothing Then ._Category_Id = Convert.ToInt32(item.Attributes("id").InnerText)
+                            If item.Attributes("name") IsNot Nothing Then ._Category_Name = Convert.ToString(item.Attributes("name").InnerText)
+                            If item.Attributes("parent_id") IsNot Nothing Then ._Category_Parent_Id = Convert.ToInt32(item.Attributes("parent_id").InnerText)
                         End With
                         sGetCategoryRelated.Add(rel)
                         rel = Nothing
@@ -396,28 +396,28 @@ EndM:
                     If item IsNot Nothing Then
                         rel = New Series
                         With rel
-                            If item("id") IsNot Nothing Then .Id = Convert.ToString(item("id"))
-                            If item("title") IsNot Nothing Then .Title = Convert.ToString(item("title"))
+                            If item("id") IsNot Nothing Then ._Id = Convert.ToString(item("id"))
+                            If item("title") IsNot Nothing Then ._Title = Convert.ToString(item("title"))
 
-                            If item("realtime_start") IsNot Nothing Then .RealtimeStart = Convert.ToDateTime(item("realtime_start"))
-                            If item("realtime_end") IsNot Nothing Then .RealtimeEnd = Convert.ToDateTime(item("realtime_end"))
+                            If item("realtime_start") IsNot Nothing Then ._RealtimeStart = Convert.ToDateTime(item("realtime_start"))
+                            If item("realtime_end") IsNot Nothing Then ._RealtimeEnd = Convert.ToDateTime(item("realtime_end"))
 
-                            If item("observation_start") IsNot Nothing Then .Observation_start = Convert.ToDateTime(item("observation_start"))
-                            If item("observation_end") IsNot Nothing Then .Observation_end = Convert.ToDateTime(item("observation_end"))
+                            If item("observation_start") IsNot Nothing Then ._Observation_start = Convert.ToDateTime(item("observation_start"))
+                            If item("observation_end") IsNot Nothing Then ._Observation_end = Convert.ToDateTime(item("observation_end"))
 
-                            If item("frequency") IsNot Nothing Then .Frequency = Convert.ToString(item("frequency"))
-                            If item("frequency_short") IsNot Nothing Then .Frequency_short = Convert.ToString(item("frequency_short"))
+                            If item("frequency") IsNot Nothing Then ._Frequency = Convert.ToString(item("frequency"))
+                            If item("frequency_short") IsNot Nothing Then ._Frequency_short = Convert.ToString(item("frequency_short"))
 
-                            If item("units") IsNot Nothing Then .units = Convert.ToString(item("units"))
-                            If item("units_short") IsNot Nothing Then .units_short = Convert.ToString(item("units_short"))
+                            If item("units") IsNot Nothing Then ._units = Convert.ToString(item("units"))
+                            If item("units_short") IsNot Nothing Then ._units_short = Convert.ToString(item("units_short"))
 
-                            If item("seasonal_adjustment") IsNot Nothing Then .seasonal_adjustment = Convert.ToString(item("seasonal_adjustment"))
-                            If item("seasonal_adjustment_short") IsNot Nothing Then .seasonal_adjustment_short = Convert.ToString(item("seasonal_adjustment_short"))
+                            If item("seasonal_adjustment") IsNot Nothing Then ._seasonal_adjustment = Convert.ToString(item("seasonal_adjustment"))
+                            If item("seasonal_adjustment_short") IsNot Nothing Then ._seasonal_adjustment_short = Convert.ToString(item("seasonal_adjustment_short"))
 
-                            If item("last_updated") IsNot Nothing Then .last_updated = Convert.ToString(item("last_updated"))
-                            If item("popularity") IsNot Nothing Then .popularity = Convert.ToInt32(item("popularity"))
+                            If item("last_updated") IsNot Nothing Then ._last_updated = Convert.ToString(item("last_updated"))
+                            If item("popularity") IsNot Nothing Then ._popularity = Convert.ToInt32(item("popularity"))
 
-                            If item("notes") IsNot Nothing Then .notes = Convert.ToString(item("notes"))
+                            If item("notes") IsNot Nothing Then ._notes = Convert.ToString(item("notes"))
                         End With
                         sGetCategorySeries.Add(rel)
                         rel = Nothing
@@ -432,28 +432,28 @@ EndM:
                     If item IsNot Nothing Then
                         rel = New Series
                         With rel
-                            If item.Attributes("id") IsNot Nothing Then .Id = Convert.ToString(item.Attributes("id").InnerText)
-                            If item.Attributes("title") IsNot Nothing Then .Title = Convert.ToString(item.Attributes("title").InnerText)
+                            If item.Attributes("id") IsNot Nothing Then ._Id = Convert.ToString(item.Attributes("id").InnerText)
+                            If item.Attributes("title") IsNot Nothing Then ._Title = Convert.ToString(item.Attributes("title").InnerText)
 
-                            If item.Attributes("realtime_start") IsNot Nothing Then .RealtimeStart = Convert.ToDateTime(item.Attributes("realtime_start").InnerText)
-                            If item.Attributes("realtime_end") IsNot Nothing Then .RealtimeEnd = Convert.ToDateTime(item.Attributes("realtime_end").InnerText)
+                            If item.Attributes("realtime_start") IsNot Nothing Then ._RealtimeStart = Convert.ToDateTime(item.Attributes("realtime_start").InnerText)
+                            If item.Attributes("realtime_end") IsNot Nothing Then ._RealtimeEnd = Convert.ToDateTime(item.Attributes("realtime_end").InnerText)
 
-                            If item.Attributes("observation_start") IsNot Nothing Then .Observation_start = Convert.ToDateTime(item.Attributes("observation_start").InnerText)
-                            If item.Attributes("observation_end") IsNot Nothing Then .Observation_end = Convert.ToDateTime(item.Attributes("observation_end").InnerText)
+                            If item.Attributes("observation_start") IsNot Nothing Then ._Observation_start = Convert.ToDateTime(item.Attributes("observation_start").InnerText)
+                            If item.Attributes("observation_end") IsNot Nothing Then ._Observation_end = Convert.ToDateTime(item.Attributes("observation_end").InnerText)
 
-                            If item.Attributes("frequency") IsNot Nothing Then .Frequency = Convert.ToString(item.Attributes("frequency").InnerText)
-                            If item.Attributes("frequency_short") IsNot Nothing Then .Frequency_short = Convert.ToString(item.Attributes("frequency_short").InnerText)
+                            If item.Attributes("frequency") IsNot Nothing Then ._Frequency = Convert.ToString(item.Attributes("frequency").InnerText)
+                            If item.Attributes("frequency_short") IsNot Nothing Then ._Frequency_short = Convert.ToString(item.Attributes("frequency_short").InnerText)
 
-                            If item.Attributes("units") IsNot Nothing Then .units = Convert.ToString(item.Attributes("units").InnerText)
-                            If item.Attributes("units_short") IsNot Nothing Then .units_short = Convert.ToString(item.Attributes("units_short").InnerText)
+                            If item.Attributes("units") IsNot Nothing Then ._units = Convert.ToString(item.Attributes("units").InnerText)
+                            If item.Attributes("units_short") IsNot Nothing Then ._units_short = Convert.ToString(item.Attributes("units_short").InnerText)
 
-                            If item.Attributes("seasonal_adjustment") IsNot Nothing Then .seasonal_adjustment = Convert.ToString(item.Attributes("seasonal_adjustment").InnerText)
-                            If item.Attributes("seasonal_adjustment_short") IsNot Nothing Then .seasonal_adjustment_short = Convert.ToString(item.Attributes("seasonal_adjustment_short").InnerText)
+                            If item.Attributes("seasonal_adjustment") IsNot Nothing Then ._seasonal_adjustment = Convert.ToString(item.Attributes("seasonal_adjustment").InnerText)
+                            If item.Attributes("seasonal_adjustment_short") IsNot Nothing Then ._seasonal_adjustment_short = Convert.ToString(item.Attributes("seasonal_adjustment_short").InnerText)
 
-                            If item.Attributes("last_updated") IsNot Nothing Then .last_updated = Convert.ToString(item.Attributes("last_updated").InnerText)
-                            If item.Attributes("popularity") IsNot Nothing Then .popularity = Convert.ToInt32(item.Attributes("popularity").InnerText)
+                            If item.Attributes("last_updated") IsNot Nothing Then ._last_updated = Convert.ToString(item.Attributes("last_updated").InnerText)
+                            If item.Attributes("popularity") IsNot Nothing Then ._popularity = Convert.ToInt32(item.Attributes("popularity").InnerText)
 
-                            If item.Attributes("notes") IsNot Nothing Then .notes = Convert.ToString(item.Attributes("notes").InnerText)
+                            If item.Attributes("notes") IsNot Nothing Then ._notes = Convert.ToString(item.Attributes("notes").InnerText)
                         End With
                         sGetCategorySeries.Add(rel)
                         rel = Nothing
@@ -543,12 +543,12 @@ EndM:
                     If item IsNot Nothing Then
                         rel = New Tags
                         With rel
-                            If item("name") IsNot Nothing Then .Name = Convert.ToString(item("name"))
-                            If item("group_id") IsNot Nothing Then .GroupId = Convert.ToString(item("group_id"))
-                            If item("notes") IsNot Nothing Then .Notes = Convert.ToString(item("notes"))
-                            If item("created") IsNot Nothing Then .CreatedDate = Convert.ToString(item("created"))
-                            If item("popularity") IsNot Nothing Then .Popularity = Convert.ToInt32(item("popularity"))
-                            If item("series_count") IsNot Nothing Then .SeriesCount = Convert.ToInt32(item("series_count"))
+                            If item("name") IsNot Nothing Then ._Name = Convert.ToString(item("name"))
+                            If item("group_id") IsNot Nothing Then ._GroupId = Convert.ToString(item("group_id"))
+                            If item("notes") IsNot Nothing Then ._Notes = Convert.ToString(item("notes"))
+                            If item("created") IsNot Nothing Then ._CreatedDate = Convert.ToString(item("created"))
+                            If item("popularity") IsNot Nothing Then ._Popularity = Convert.ToInt32(item("popularity"))
+                            If item("series_count") IsNot Nothing Then ._SeriesCount = Convert.ToInt32(item("series_count"))
                         End With
                         sGetCategoryTags.Add(rel)
                     End If
@@ -563,12 +563,12 @@ EndM:
                     If item IsNot Nothing Then
                         rel = New Tags
                         With rel
-                            If item.Attributes("name") IsNot Nothing Then .Name = Convert.ToString(item.Attributes("name").InnerText)
-                            If item.Attributes("group_id") IsNot Nothing Then .GroupId = Convert.ToString(item.Attributes("group_id").InnerText)
-                            If item.Attributes("notes") IsNot Nothing Then .Notes = Convert.ToString(item.Attributes("notes").InnerText)
-                            If item.Attributes("created") IsNot Nothing Then .CreatedDate = Convert.ToString(item.Attributes("created").InnerText)
-                            If item.Attributes("popularity") IsNot Nothing Then .Popularity = Convert.ToInt32(item.Attributes("popularity").InnerText)
-                            If item.Attributes("series_count") IsNot Nothing Then .SeriesCount = Convert.ToInt32(item.Attributes("series_count").InnerText)
+                            If item.Attributes("name") IsNot Nothing Then ._Name = Convert.ToString(item.Attributes("name").InnerText)
+                            If item.Attributes("group_id") IsNot Nothing Then ._GroupId = Convert.ToString(item.Attributes("group_id").InnerText)
+                            If item.Attributes("notes") IsNot Nothing Then ._Notes = Convert.ToString(item.Attributes("notes").InnerText)
+                            If item.Attributes("created") IsNot Nothing Then ._CreatedDate = Convert.ToString(item.Attributes("created").InnerText)
+                            If item.Attributes("popularity") IsNot Nothing Then ._Popularity = Convert.ToInt32(item.Attributes("popularity").InnerText)
+                            If item.Attributes("series_count") IsNot Nothing Then ._SeriesCount = Convert.ToInt32(item.Attributes("series_count").InnerText)
                         End With
                         sGetCategoryTags.Add(rel)
                         rel = Nothing
@@ -660,12 +660,12 @@ EndM:
                     If item IsNot Nothing Then
                         rel = New Tags
                         With rel
-                            If item("name") IsNot Nothing Then .Name = Convert.ToString(item("name"))
-                            If item("group_id") IsNot Nothing Then .GroupId = Convert.ToString(item("group_id"))
-                            If item("notes") IsNot Nothing Then .Notes = Convert.ToString(item("notes"))
-                            If item("created") IsNot Nothing Then .CreatedDate = Convert.ToString(item("created"))
-                            If item("popularity") IsNot Nothing Then .Popularity = Convert.ToInt32(item("popularity"))
-                            If item("series_count") IsNot Nothing Then .SeriesCount = Convert.ToInt32(item("series_count"))
+                            If item("name") IsNot Nothing Then ._Name = Convert.ToString(item("name"))
+                            If item("group_id") IsNot Nothing Then ._GroupId = Convert.ToString(item("group_id"))
+                            If item("notes") IsNot Nothing Then ._Notes = Convert.ToString(item("notes"))
+                            If item("created") IsNot Nothing Then ._CreatedDate = Convert.ToString(item("created"))
+                            If item("popularity") IsNot Nothing Then ._Popularity = Convert.ToInt32(item("popularity"))
+                            If item("series_count") IsNot Nothing Then ._SeriesCount = Convert.ToInt32(item("series_count"))
                         End With
                         sGetCategoryRelatedTags.Add(rel)
                     End If
@@ -680,12 +680,12 @@ EndM:
                     If item IsNot Nothing Then
                         rel = New Tags
                         With rel
-                            If item.Attributes("name") IsNot Nothing Then .Name = Convert.ToString(item.Attributes("name").InnerText)
-                            If item.Attributes("group_id") IsNot Nothing Then .GroupId = Convert.ToString(item.Attributes("group_id").InnerText)
-                            If item.Attributes("notes") IsNot Nothing Then .Notes = Convert.ToString(item.Attributes("notes").InnerText)
-                            If item.Attributes("created") IsNot Nothing Then .CreatedDate = Convert.ToString(item.Attributes("created").InnerText)
-                            If item.Attributes("popularity") IsNot Nothing Then .Popularity = Convert.ToInt32(item.Attributes("popularity").InnerText)
-                            If item.Attributes("series_count") IsNot Nothing Then .SeriesCount = Convert.ToInt32(item.Attributes("series_count").InnerText)
+                            If item.Attributes("name") IsNot Nothing Then ._Name = Convert.ToString(item.Attributes("name").InnerText)
+                            If item.Attributes("group_id") IsNot Nothing Then ._GroupId = Convert.ToString(item.Attributes("group_id").InnerText)
+                            If item.Attributes("notes") IsNot Nothing Then ._Notes = Convert.ToString(item.Attributes("notes").InnerText)
+                            If item.Attributes("created") IsNot Nothing Then ._CreatedDate = Convert.ToString(item.Attributes("created").InnerText)
+                            If item.Attributes("popularity") IsNot Nothing Then ._Popularity = Convert.ToInt32(item.Attributes("popularity").InnerText)
+                            If item.Attributes("series_count") IsNot Nothing Then ._SeriesCount = Convert.ToInt32(item.Attributes("series_count").InnerText)
                         End With
                         sGetCategoryRelatedTags.Add(rel)
                         rel = Nothing
@@ -773,10 +773,10 @@ EndM:
                     If item IsNot Nothing Then
                         rel = New Release
                         With rel
-                            If item("id") IsNot Nothing Then .Release_Id = Convert.ToInt32(item("id"))
-                            If item("name") IsNot Nothing Then .Name = Convert.ToString(item("name"))
-                            If item("realtime_start") IsNot Nothing Then .RealtimeStart = Convert.ToDateTime(item("realtime_start"))
-                            If item("realtime_end") IsNot Nothing Then .RealtimeEnd = Convert.ToDateTime(item("realtime_end"))
+                            If item("id") IsNot Nothing Then ._Release_Id = Convert.ToInt32(item("id"))
+                            If item("name") IsNot Nothing Then ._Name = Convert.ToString(item("name"))
+                            If item("realtime_start") IsNot Nothing Then ._RealtimeStart = Convert.ToDateTime(item("realtime_start"))
+                            If item("realtime_end") IsNot Nothing Then ._RealtimeEnd = Convert.ToDateTime(item("realtime_end"))
                         End With
                         sGetReleases.Add(rel)
                     End If
@@ -791,10 +791,10 @@ EndM:
                     If item IsNot Nothing Then
                         rel = New Release
                         With rel
-                            If item.Attributes("id") IsNot Nothing Then .Release_Id = Convert.ToInt32(item.Attributes("id").InnerText)
-                            If item.Attributes("name") IsNot Nothing Then .Name = Convert.ToString(item.Attributes("name").InnerText)
-                            If item.Attributes("realtime_start") IsNot Nothing Then .RealtimeStart = Convert.ToDateTime(item.Attributes("realtime_start").InnerText)
-                            If item.Attributes("realtime_end") IsNot Nothing Then .RealtimeEnd = Convert.ToDateTime(item.Attributes("realtime_end").InnerText)
+                            If item.Attributes("id") IsNot Nothing Then ._Release_Id = Convert.ToInt32(item.Attributes("id").InnerText)
+                            If item.Attributes("name") IsNot Nothing Then ._Name = Convert.ToString(item.Attributes("name").InnerText)
+                            If item.Attributes("realtime_start") IsNot Nothing Then ._RealtimeStart = Convert.ToDateTime(item.Attributes("realtime_start").InnerText)
+                            If item.Attributes("realtime_end") IsNot Nothing Then ._RealtimeEnd = Convert.ToDateTime(item.Attributes("realtime_end").InnerText)
                         End With
                         sGetReleases.Add(rel)
                         rel = Nothing
@@ -877,9 +877,9 @@ EndM:
                     If item IsNot Nothing Then
                         ser = New ReleaseDate
                         With ser
-                            If item("release_id") IsNot Nothing Then .ReleaseId = Convert.ToInt32(item("id"))
-                            If item("release_name") IsNot Nothing Then .ReleaseName = Convert.ToString(item("release_name"))
-                            If item("date") IsNot Nothing Then .ReleaseDate = Convert.ToDateTime(item("date"))
+                            If item("release_id") IsNot Nothing Then ._ReleaseId = Convert.ToInt32(item("id"))
+                            If item("release_name") IsNot Nothing Then ._ReleaseName = Convert.ToString(item("release_name"))
+                            If item("date") IsNot Nothing Then ._ReleaseDate = Convert.ToDateTime(item("date"))
                         End With
                         sGetReleasesDates.Add(ser)
                     End If
@@ -894,9 +894,9 @@ EndM:
                     If item IsNot Nothing Then
                         ser = New ReleaseDate
                         With ser
-                            If item.Attributes("release_id") IsNot Nothing Then .ReleaseId = Convert.ToInt32(item.Attributes("id").InnerText)
-                            If item.Attributes("release_name") IsNot Nothing Then .ReleaseName = Convert.ToString(item.Attributes("release_name").InnerText)
-                            If item.Attributes("date") IsNot Nothing Then .ReleaseDate = Convert.ToDateTime(item.Attributes("date").InnerText)
+                            If item.Attributes("release_id") IsNot Nothing Then ._ReleaseId = Convert.ToInt32(item.Attributes("id").InnerText)
+                            If item.Attributes("release_name") IsNot Nothing Then ._ReleaseName = Convert.ToString(item.Attributes("release_name").InnerText)
+                            If item.Attributes("date") IsNot Nothing Then ._ReleaseDate = Convert.ToDateTime(item.Attributes("date").InnerText)
                         End With
                         sGetReleasesDates.Add(ser)
                         ser = Nothing
@@ -972,13 +972,13 @@ EndM:
                     If item IsNot Nothing Then
                         ser = New Release
                         With ser
-                            If item("id") IsNot Nothing Then .Release_Id = Convert.ToInt32(item("id"))
-                            If item("name") IsNot Nothing Then .Name = Convert.ToString(item("name"))
-                            If item("realtime_start") IsNot Nothing Then .RealtimeStart = Convert.ToDateTime(item("realtime_start"))
-                            If item("realtime_end") IsNot Nothing Then .RealtimeEnd = Convert.ToDateTime(item("realtime_end"))
+                            If item("id") IsNot Nothing Then ._Release_Id = Convert.ToInt32(item("id"))
+                            If item("name") IsNot Nothing Then ._Name = Convert.ToString(item("name"))
+                            If item("realtime_start") IsNot Nothing Then ._RealtimeStart = Convert.ToDateTime(item("realtime_start"))
+                            If item("realtime_end") IsNot Nothing Then ._RealtimeEnd = Convert.ToDateTime(item("realtime_end"))
 
-                            If item("press_release") IsNot Nothing Then .PressRelease = Convert.ToString(item("press_release"))
-                            If item("link") IsNot Nothing Then .Link = Convert.ToString(item("link"))
+                            If item("press_release") IsNot Nothing Then ._PressRelease = Convert.ToString(item("press_release"))
+                            If item("link") IsNot Nothing Then ._Link = Convert.ToString(item("link"))
 
                         End With
                     End If
@@ -993,13 +993,13 @@ EndM:
                     If item IsNot Nothing Then
                         ser = New Release
                         With ser
-                            If item.Attributes("id") IsNot Nothing Then .Release_Id = Convert.ToInt32(item.Attributes("id").InnerText)
-                            If item.Attributes("name") IsNot Nothing Then .Name = Convert.ToString(item.Attributes("name").InnerText)
-                            If item.Attributes("realtime_start") IsNot Nothing Then .RealtimeStart = Convert.ToDateTime(item.Attributes("realtime_start").InnerText)
-                            If item.Attributes("realtime_end") IsNot Nothing Then .RealtimeEnd = Convert.ToDateTime(item.Attributes("realtime_end").InnerText)
+                            If item.Attributes("id") IsNot Nothing Then ._Release_Id = Convert.ToInt32(item.Attributes("id").InnerText)
+                            If item.Attributes("name") IsNot Nothing Then ._Name = Convert.ToString(item.Attributes("name").InnerText)
+                            If item.Attributes("realtime_start") IsNot Nothing Then ._RealtimeStart = Convert.ToDateTime(item.Attributes("realtime_start").InnerText)
+                            If item.Attributes("realtime_end") IsNot Nothing Then ._RealtimeEnd = Convert.ToDateTime(item.Attributes("realtime_end").InnerText)
 
-                            If item.Attributes("press_release") IsNot Nothing Then .PressRelease = Convert.ToString(item.Attributes("press_release").InnerText)
-                            If item.Attributes("link") IsNot Nothing Then .Link = Convert.ToString(item.Attributes("link").InnerText)
+                            If item.Attributes("press_release") IsNot Nothing Then ._PressRelease = Convert.ToString(item.Attributes("press_release").InnerText)
+                            If item.Attributes("link") IsNot Nothing Then ._Link = Convert.ToString(item.Attributes("link").InnerText)
                         End With
                     End If
                     Exit For
@@ -1079,8 +1079,8 @@ EndM:
                     If item IsNot Nothing Then
                         ser = New ReleaseDate
                         With ser
-                            If item("release_id") IsNot Nothing Then .ReleaseId = Convert.ToInt32(item("id"))
-                            If item("date") IsNot Nothing Then .ReleaseDate = Convert.ToDateTime(item("date"))
+                            If item("release_id") IsNot Nothing Then ._ReleaseId = Convert.ToInt32(item("id"))
+                            If item("date") IsNot Nothing Then ._ReleaseDate = Convert.ToDateTime(item("date"))
                         End With
                         sGetReleaseDates.Add(ser)
                     End If
@@ -1095,8 +1095,8 @@ EndM:
                     If item IsNot Nothing Then
                         ser = New ReleaseDate
                         With ser
-                            If item.Attributes("release_id") IsNot Nothing Then .ReleaseId = Convert.ToInt32(item.Attributes("id").InnerText)
-                            If item.Attributes("date") IsNot Nothing Then .ReleaseDate = Convert.ToDateTime(item.Attributes("date").InnerText)
+                            If item.Attributes("release_id") IsNot Nothing Then ._ReleaseId = Convert.ToInt32(item.Attributes("id").InnerText)
+                            If item.Attributes("date") IsNot Nothing Then ._ReleaseDate = Convert.ToDateTime(item.Attributes("date").InnerText)
                         End With
                         sGetReleaseDates.Add(ser)
                         ser = Nothing
@@ -1180,25 +1180,25 @@ EndM:
                     If item IsNot Nothing Then
                         ser = New Series
                         With ser
-                            If item("id") IsNot Nothing Then .Id = Convert.ToString(item("id"))
-                            If item("title") IsNot Nothing Then .Title = Convert.ToString(item("title"))
-                            If item("realtime_start") IsNot Nothing Then .RealtimeStart = Convert.ToDateTime(item("realtime_start"))
-                            If item("realtime_end") IsNot Nothing Then .RealtimeEnd = Convert.ToDateTime(item("realtime_end"))
+                            If item("id") IsNot Nothing Then ._Id = Convert.ToString(item("id"))
+                            If item("title") IsNot Nothing Then ._Title = Convert.ToString(item("title"))
+                            If item("realtime_start") IsNot Nothing Then ._RealtimeStart = Convert.ToDateTime(item("realtime_start"))
+                            If item("realtime_end") IsNot Nothing Then ._RealtimeEnd = Convert.ToDateTime(item("realtime_end"))
 
-                            If item("observation_start") IsNot Nothing Then .Observation_start = Convert.ToDateTime(item("observation_start"))
-                            If item("observation_end") IsNot Nothing Then .Observation_end = Convert.ToDateTime(item("observation_end"))
-                            If item("frequency") IsNot Nothing Then .Frequency = Convert.ToString(item("frequency"))
-                            If item("frequency_short") IsNot Nothing Then .Frequency_short = Convert.ToString(item("frequency_short"))
+                            If item("observation_start") IsNot Nothing Then ._Observation_start = Convert.ToDateTime(item("observation_start"))
+                            If item("observation_end") IsNot Nothing Then ._Observation_end = Convert.ToDateTime(item("observation_end"))
+                            If item("frequency") IsNot Nothing Then ._Frequency = Convert.ToString(item("frequency"))
+                            If item("frequency_short") IsNot Nothing Then ._Frequency_short = Convert.ToString(item("frequency_short"))
 
-                            If item("units") IsNot Nothing Then .units = Convert.ToString(item("units"))
-                            If item("units_short") IsNot Nothing Then .units_short = Convert.ToString(item("units_short"))
-                            If item("seasonal_adjustment") IsNot Nothing Then .seasonal_adjustment = Convert.ToString(item("seasonal_adjustment"))
-                            If item("seasonal_adjustment_short") IsNot Nothing Then .seasonal_adjustment_short = Convert.ToString(item("seasonal_adjustment_short"))
+                            If item("units") IsNot Nothing Then ._units = Convert.ToString(item("units"))
+                            If item("units_short") IsNot Nothing Then ._units_short = Convert.ToString(item("units_short"))
+                            If item("seasonal_adjustment") IsNot Nothing Then ._seasonal_adjustment = Convert.ToString(item("seasonal_adjustment"))
+                            If item("seasonal_adjustment_short") IsNot Nothing Then ._seasonal_adjustment_short = Convert.ToString(item("seasonal_adjustment_short"))
 
-                            If item("last_updated") IsNot Nothing Then .last_updated = Convert.ToString(item("last_updated"))
-                            If item("popularity") IsNot Nothing Then .popularity = Convert.ToInt32(item("popularity"))
-                            If item("group_popularity") IsNot Nothing Then .group_popularity = Convert.ToInt32(item("group_popularity"))
-                            If item("notes") IsNot Nothing Then .notes = Convert.ToString(item("notes"))
+                            If item("last_updated") IsNot Nothing Then ._last_updated = Convert.ToString(item("last_updated"))
+                            If item("popularity") IsNot Nothing Then ._popularity = Convert.ToInt32(item("popularity"))
+                            If item("group_popularity") IsNot Nothing Then ._group_popularity = Convert.ToInt32(item("group_popularity"))
+                            If item("notes") IsNot Nothing Then ._notes = Convert.ToString(item("notes"))
                         End With
                         sGetReleaseSeries.Add(ser)
                     End If
@@ -1213,28 +1213,28 @@ EndM:
                     If item IsNot Nothing Then
                         ser = New Series
                         With ser
-                            If item.Attributes("id") IsNot Nothing Then .Id = Convert.ToString(item.Attributes("id").InnerText)
-                            If item.Attributes("title") IsNot Nothing Then .Title = Convert.ToString(item.Attributes("title").InnerText)
+                            If item.Attributes("id") IsNot Nothing Then ._Id = Convert.ToString(item.Attributes("id").InnerText)
+                            If item.Attributes("title") IsNot Nothing Then ._Title = Convert.ToString(item.Attributes("title").InnerText)
 
-                            If item.Attributes("realtime_start") IsNot Nothing Then .RealtimeStart = Convert.ToDateTime(item.Attributes("realtime_start").InnerText)
-                            If item.Attributes("realtime_end") IsNot Nothing Then .RealtimeEnd = Convert.ToDateTime(item.Attributes("realtime_end").InnerText)
+                            If item.Attributes("realtime_start") IsNot Nothing Then ._RealtimeStart = Convert.ToDateTime(item.Attributes("realtime_start").InnerText)
+                            If item.Attributes("realtime_end") IsNot Nothing Then ._RealtimeEnd = Convert.ToDateTime(item.Attributes("realtime_end").InnerText)
 
-                            If item.Attributes("observation_start") IsNot Nothing Then .Observation_start = Convert.ToDateTime(item.Attributes("observation_start").InnerText)
-                            If item.Attributes("observation_end") IsNot Nothing Then .Observation_end = Convert.ToDateTime(item.Attributes("observation_end").InnerText)
+                            If item.Attributes("observation_start") IsNot Nothing Then ._Observation_start = Convert.ToDateTime(item.Attributes("observation_start").InnerText)
+                            If item.Attributes("observation_end") IsNot Nothing Then ._Observation_end = Convert.ToDateTime(item.Attributes("observation_end").InnerText)
 
-                            If item.Attributes("frequency") IsNot Nothing Then .Frequency = Convert.ToString(item.Attributes("frequency").InnerText)
-                            If item.Attributes("frequency_short") IsNot Nothing Then .Frequency_short = Convert.ToString(item.Attributes("frequency_short").InnerText)
+                            If item.Attributes("frequency") IsNot Nothing Then ._Frequency = Convert.ToString(item.Attributes("frequency").InnerText)
+                            If item.Attributes("frequency_short") IsNot Nothing Then ._Frequency_short = Convert.ToString(item.Attributes("frequency_short").InnerText)
 
-                            If item.Attributes("units") IsNot Nothing Then .units = Convert.ToString(item.Attributes("units").InnerText)
-                            If item.Attributes("units_short") IsNot Nothing Then .units_short = Convert.ToString(item.Attributes("units_short").InnerText)
+                            If item.Attributes("units") IsNot Nothing Then ._units = Convert.ToString(item.Attributes("units").InnerText)
+                            If item.Attributes("units_short") IsNot Nothing Then ._units_short = Convert.ToString(item.Attributes("units_short").InnerText)
 
-                            If item.Attributes("seasonal_adjustment") IsNot Nothing Then .seasonal_adjustment = Convert.ToString(item.Attributes("seasonal_adjustment").InnerText)
-                            If item.Attributes("seasonal_adjustment_short") IsNot Nothing Then .seasonal_adjustment_short = Convert.ToString(item.Attributes("seasonal_adjustment_short").InnerText)
+                            If item.Attributes("seasonal_adjustment") IsNot Nothing Then ._seasonal_adjustment = Convert.ToString(item.Attributes("seasonal_adjustment").InnerText)
+                            If item.Attributes("seasonal_adjustment_short") IsNot Nothing Then ._seasonal_adjustment_short = Convert.ToString(item.Attributes("seasonal_adjustment_short").InnerText)
 
-                            If item.Attributes("last_updated") IsNot Nothing Then .last_updated = Convert.ToString(item.Attributes("last_updated").InnerText)
-                            If item.Attributes("popularity") IsNot Nothing Then .popularity = Convert.ToInt32(item.Attributes("popularity").InnerText)
+                            If item.Attributes("last_updated") IsNot Nothing Then ._last_updated = Convert.ToString(item.Attributes("last_updated").InnerText)
+                            If item.Attributes("popularity") IsNot Nothing Then ._popularity = Convert.ToInt32(item.Attributes("popularity").InnerText)
 
-                            If item.Attributes("notes") IsNot Nothing Then .notes = Convert.ToString(item.Attributes("notes").InnerText)
+                            If item.Attributes("notes") IsNot Nothing Then ._notes = Convert.ToString(item.Attributes("notes").InnerText)
                         End With
                         sGetReleaseSeries.Add(ser)
                         ser = Nothing
@@ -1311,11 +1311,11 @@ EndM:
                     If item IsNot Nothing Then
                         ser = New Source
                         With ser
-                            If item("id") IsNot Nothing Then .Id = Convert.ToInt32(item("id"))
-                            If item("name") IsNot Nothing Then .Name = Convert.ToString(item("name"))
-                            If item("realtime_start") IsNot Nothing Then .RealtimeStart = Convert.ToDateTime(item("realtime_start"))
-                            If item("realtime_end") IsNot Nothing Then .RealtimeEnd = Convert.ToDateTime(item("realtime_end"))
-                            If item("link") IsNot Nothing Then .Link = Convert.ToString(item("link"))
+                            If item("id") IsNot Nothing Then ._ID = Convert.ToInt32(item("id"))
+                            If item("name") IsNot Nothing Then ._Name = Convert.ToString(item("name"))
+                            If item("realtime_start") IsNot Nothing Then ._RealtimeStart = Convert.ToDateTime(item("realtime_start"))
+                            If item("realtime_end") IsNot Nothing Then ._RealtimeEnd = Convert.ToDateTime(item("realtime_end"))
+                            If item("link") IsNot Nothing Then ._Link = Convert.ToString(item("link"))
                         End With
                         sGetReleaseSources.Add(ser)
                     End If
@@ -1330,10 +1330,10 @@ EndM:
                     If item IsNot Nothing Then
                         ser = New Source
                         With ser
-                            If item.Attributes("id") IsNot Nothing Then .Id = Convert.ToInt32(item.Attributes("id").InnerText)
-                            If item.Attributes("name") IsNot Nothing Then .Name = Convert.ToString(item.Attributes("name").InnerText)
-                            If item.Attributes("realtime_start") IsNot Nothing Then .RealtimeStart = Convert.ToDateTime(item.Attributes("realtime_start").InnerText)
-                            If item.Attributes("realtime_end") IsNot Nothing Then .RealtimeEnd = Convert.ToDateTime(item.Attributes("realtime_end").InnerText)
+                            If item.Attributes("id") IsNot Nothing Then ._ID = Convert.ToInt32(item.Attributes("id").InnerText)
+                            If item.Attributes("name") IsNot Nothing Then ._Name = Convert.ToString(item.Attributes("name").InnerText)
+                            If item.Attributes("realtime_start") IsNot Nothing Then ._RealtimeStart = Convert.ToDateTime(item.Attributes("realtime_start").InnerText)
+                            If item.Attributes("realtime_end") IsNot Nothing Then ._RealtimeEnd = Convert.ToDateTime(item.Attributes("realtime_end").InnerText)
                         End With
                         sGetReleaseSources.Add(ser)
                         ser = Nothing
@@ -1414,12 +1414,12 @@ EndM:
                     If item IsNot Nothing Then
                         ser = New Tags
                         With ser
-                            If item("name") IsNot Nothing Then .Name = Convert.ToString(item("name"))
-                            If item("group_id") IsNot Nothing Then .GroupId = Convert.ToString(item("group_id"))
-                            If item("notes") IsNot Nothing Then .Notes = Convert.ToString(item("notes"))
-                            If item("created") IsNot Nothing Then .CreatedDate = Convert.ToString(item("created"))
-                            If item("popularity") IsNot Nothing Then .Popularity = Convert.ToInt32(item("popularity"))
-                            If item("series_count") IsNot Nothing Then .SeriesCount = Convert.ToInt32(item("series_count"))
+                            If item("name") IsNot Nothing Then ._Name = Convert.ToString(item("name"))
+                            If item("group_id") IsNot Nothing Then ._GroupId = Convert.ToString(item("group_id"))
+                            If item("notes") IsNot Nothing Then ._Notes = Convert.ToString(item("notes"))
+                            If item("created") IsNot Nothing Then ._CreatedDate = Convert.ToString(item("created"))
+                            If item("popularity") IsNot Nothing Then ._Popularity = Convert.ToInt32(item("popularity"))
+                            If item("series_count") IsNot Nothing Then ._SeriesCount = Convert.ToInt32(item("series_count"))
                         End With
                         sGetReleaseTags.Add(ser)
                     End If
@@ -1434,12 +1434,12 @@ EndM:
                     If item IsNot Nothing Then
                         ser = New Tags
                         With ser
-                            If item.Attributes("name") IsNot Nothing Then .Name = Convert.ToString(item.Attributes("name").InnerText)
-                            If item.Attributes("group_id") IsNot Nothing Then .GroupId = Convert.ToString(item.Attributes("group_id").InnerText)
-                            If item.Attributes("notes") IsNot Nothing Then .Notes = Convert.ToString(item.Attributes("notes").InnerText)
-                            If item.Attributes("created") IsNot Nothing Then .CreatedDate = Convert.ToString(item.Attributes("created").InnerText)
-                            If item.Attributes("popularity") IsNot Nothing Then .Popularity = Convert.ToInt32(item.Attributes("popularity").InnerText)
-                            If item.Attributes("series_count") IsNot Nothing Then .SeriesCount = Convert.ToInt32(item.Attributes("series_count").InnerText)
+                            If item.Attributes("name") IsNot Nothing Then ._Name = Convert.ToString(item.Attributes("name").InnerText)
+                            If item.Attributes("group_id") IsNot Nothing Then ._GroupId = Convert.ToString(item.Attributes("group_id").InnerText)
+                            If item.Attributes("notes") IsNot Nothing Then ._Notes = Convert.ToString(item.Attributes("notes").InnerText)
+                            If item.Attributes("created") IsNot Nothing Then ._CreatedDate = Convert.ToString(item.Attributes("created").InnerText)
+                            If item.Attributes("popularity") IsNot Nothing Then ._Popularity = Convert.ToInt32(item.Attributes("popularity").InnerText)
+                            If item.Attributes("series_count") IsNot Nothing Then ._SeriesCount = Convert.ToInt32(item.Attributes("series_count").InnerText)
                         End With
                         sGetReleaseTags.Add(ser)
                         ser = Nothing
@@ -1521,12 +1521,12 @@ EndM:
                     If item IsNot Nothing Then
                         ser = New Tags
                         With ser
-                            If item("name") IsNot Nothing Then .Name = Convert.ToString(item("name"))
-                            If item("group_id") IsNot Nothing Then .GroupId = Convert.ToString(item("group_id"))
-                            If item("notes") IsNot Nothing Then .Notes = Convert.ToString(item("notes"))
-                            If item("created") IsNot Nothing Then .CreatedDate = Convert.ToString(item("created"))
-                            If item("popularity") IsNot Nothing Then .Popularity = Convert.ToInt32(item("popularity"))
-                            If item("series_count") IsNot Nothing Then .SeriesCount = Convert.ToInt32(item("series_count"))
+                            If item("name") IsNot Nothing Then ._Name = Convert.ToString(item("name"))
+                            If item("group_id") IsNot Nothing Then ._GroupId = Convert.ToString(item("group_id"))
+                            If item("notes") IsNot Nothing Then ._Notes = Convert.ToString(item("notes"))
+                            If item("created") IsNot Nothing Then ._CreatedDate = Convert.ToString(item("created"))
+                            If item("popularity") IsNot Nothing Then ._Popularity = Convert.ToInt32(item("popularity"))
+                            If item("series_count") IsNot Nothing Then ._SeriesCount = Convert.ToInt32(item("series_count"))
                         End With
                         sGetReleaseRelatedTags.Add(ser)
                     End If
@@ -1541,12 +1541,12 @@ EndM:
                     If item IsNot Nothing Then
                         ser = New Tags
                         With ser
-                            If item.Attributes("name") IsNot Nothing Then .Name = Convert.ToString(item.Attributes("name").InnerText)
-                            If item.Attributes("group_id") IsNot Nothing Then .GroupId = Convert.ToString(item.Attributes("group_id").InnerText)
-                            If item.Attributes("notes") IsNot Nothing Then .Notes = Convert.ToString(item.Attributes("notes").InnerText)
-                            If item.Attributes("created") IsNot Nothing Then .CreatedDate = Convert.ToString(item.Attributes("created").InnerText)
-                            If item.Attributes("popularity") IsNot Nothing Then .Popularity = Convert.ToInt32(item.Attributes("popularity").InnerText)
-                            If item.Attributes("series_count") IsNot Nothing Then .SeriesCount = Convert.ToInt32(item.Attributes("series_count").InnerText)
+                            If item.Attributes("name") IsNot Nothing Then ._Name = Convert.ToString(item.Attributes("name").InnerText)
+                            If item.Attributes("group_id") IsNot Nothing Then ._GroupId = Convert.ToString(item.Attributes("group_id").InnerText)
+                            If item.Attributes("notes") IsNot Nothing Then ._Notes = Convert.ToString(item.Attributes("notes").InnerText)
+                            If item.Attributes("created") IsNot Nothing Then ._CreatedDate = Convert.ToString(item.Attributes("created").InnerText)
+                            If item.Attributes("popularity") IsNot Nothing Then ._Popularity = Convert.ToInt32(item.Attributes("popularity").InnerText)
+                            If item.Attributes("series_count") IsNot Nothing Then ._SeriesCount = Convert.ToInt32(item.Attributes("series_count").InnerText)
                         End With
                         sGetReleaseRelatedTags.Add(ser)
                         ser = Nothing
@@ -1625,28 +1625,28 @@ EndM:
                     If item IsNot Nothing Then
                         rel = New Series
                         With rel
-                            If item("id") IsNot Nothing Then .Id = Convert.ToString(item("id"))
-                            If item("title") IsNot Nothing Then .Title = Convert.ToString(item("title"))
+                            If item("id") IsNot Nothing Then ._Id = Convert.ToString(item("id"))
+                            If item("title") IsNot Nothing Then ._Title = Convert.ToString(item("title"))
 
-                            If item("realtime_start") IsNot Nothing Then .RealtimeStart = Convert.ToDateTime(item("realtime_start"))
-                            If item("realtime_end") IsNot Nothing Then .RealtimeEnd = Convert.ToDateTime(item("realtime_end"))
+                            If item("realtime_start") IsNot Nothing Then ._RealtimeStart = Convert.ToDateTime(item("realtime_start"))
+                            If item("realtime_end") IsNot Nothing Then ._RealtimeEnd = Convert.ToDateTime(item("realtime_end"))
 
-                            If item("observation_start") IsNot Nothing Then .Observation_start = Convert.ToDateTime(item("observation_start"))
-                            If item("observation_end") IsNot Nothing Then .Observation_end = Convert.ToDateTime(item("observation_end"))
+                            If item("observation_start") IsNot Nothing Then ._Observation_start = Convert.ToDateTime(item("observation_start"))
+                            If item("observation_end") IsNot Nothing Then ._Observation_end = Convert.ToDateTime(item("observation_end"))
 
-                            If item("frequency") IsNot Nothing Then .Frequency = Convert.ToString(item("frequency"))
-                            If item("frequency_short") IsNot Nothing Then .Frequency_short = Convert.ToString(item("frequency_short"))
+                            If item("frequency") IsNot Nothing Then ._Frequency = Convert.ToString(item("frequency"))
+                            If item("frequency_short") IsNot Nothing Then ._Frequency_short = Convert.ToString(item("frequency_short"))
 
-                            If item("units") IsNot Nothing Then .units = Convert.ToString(item("units"))
-                            If item("units_short") IsNot Nothing Then .units_short = Convert.ToString(item("units_short"))
+                            If item("units") IsNot Nothing Then ._units = Convert.ToString(item("units"))
+                            If item("units_short") IsNot Nothing Then ._units_short = Convert.ToString(item("units_short"))
 
-                            If item("seasonal_adjustment") IsNot Nothing Then .seasonal_adjustment = Convert.ToString(item("seasonal_adjustment"))
-                            If item("seasonal_adjustment_short") IsNot Nothing Then .seasonal_adjustment_short = Convert.ToString(item("seasonal_adjustment_short"))
+                            If item("seasonal_adjustment") IsNot Nothing Then ._seasonal_adjustment = Convert.ToString(item("seasonal_adjustment"))
+                            If item("seasonal_adjustment_short") IsNot Nothing Then ._seasonal_adjustment_short = Convert.ToString(item("seasonal_adjustment_short"))
 
-                            If item("last_updated") IsNot Nothing Then .last_updated = Convert.ToString(item("last_updated"))
-                            If item("popularity") IsNot Nothing Then .popularity = Convert.ToInt32(item("popularity"))
+                            If item("last_updated") IsNot Nothing Then ._last_updated = Convert.ToString(item("last_updated"))
+                            If item("popularity") IsNot Nothing Then ._popularity = Convert.ToInt32(item("popularity"))
 
-                            If item("notes") IsNot Nothing Then .notes = Convert.ToString(item("notes"))
+                            If item("notes") IsNot Nothing Then ._notes = Convert.ToString(item("notes"))
                         End With
                     End If
                 Next
@@ -1659,28 +1659,28 @@ EndM:
                     If item IsNot Nothing Then
                         rel = New Series
                         With rel
-                            If item.Attributes("id") IsNot Nothing Then .Id = Convert.ToString(item.Attributes("id").InnerText)
-                            If item.Attributes("title") IsNot Nothing Then .Title = Convert.ToString(item.Attributes("title").InnerText)
+                            If item.Attributes("id") IsNot Nothing Then ._Id = Convert.ToString(item.Attributes("id").InnerText)
+                            If item.Attributes("title") IsNot Nothing Then ._Title = Convert.ToString(item.Attributes("title").InnerText)
 
-                            If item.Attributes("realtime_start") IsNot Nothing Then .RealtimeStart = Convert.ToDateTime(item.Attributes("realtime_start").InnerText)
-                            If item.Attributes("realtime_end") IsNot Nothing Then .RealtimeEnd = Convert.ToDateTime(item.Attributes("realtime_end").InnerText)
+                            If item.Attributes("realtime_start") IsNot Nothing Then ._RealtimeStart = Convert.ToDateTime(item.Attributes("realtime_start").InnerText)
+                            If item.Attributes("realtime_end") IsNot Nothing Then ._RealtimeEnd = Convert.ToDateTime(item.Attributes("realtime_end").InnerText)
 
-                            If item.Attributes("observation_start") IsNot Nothing Then .Observation_start = Convert.ToDateTime(item.Attributes("observation_start").InnerText)
-                            If item.Attributes("observation_end") IsNot Nothing Then .Observation_end = Convert.ToDateTime(item.Attributes("observation_end").InnerText)
+                            If item.Attributes("observation_start") IsNot Nothing Then ._Observation_start = Convert.ToDateTime(item.Attributes("observation_start").InnerText)
+                            If item.Attributes("observation_end") IsNot Nothing Then ._Observation_end = Convert.ToDateTime(item.Attributes("observation_end").InnerText)
 
-                            If item.Attributes("frequency") IsNot Nothing Then .Frequency = Convert.ToString(item.Attributes("frequency").InnerText)
-                            If item.Attributes("frequency_short") IsNot Nothing Then .Frequency_short = Convert.ToString(item.Attributes("frequency_short").InnerText)
+                            If item.Attributes("frequency") IsNot Nothing Then ._Frequency = Convert.ToString(item.Attributes("frequency").InnerText)
+                            If item.Attributes("frequency_short") IsNot Nothing Then ._Frequency_short = Convert.ToString(item.Attributes("frequency_short").InnerText)
 
-                            If item.Attributes("units") IsNot Nothing Then .units = Convert.ToString(item.Attributes("units").InnerText)
-                            If item.Attributes("units_short") IsNot Nothing Then .units_short = Convert.ToString(item.Attributes("units_short").InnerText)
+                            If item.Attributes("units") IsNot Nothing Then ._units = Convert.ToString(item.Attributes("units").InnerText)
+                            If item.Attributes("units_short") IsNot Nothing Then ._units_short = Convert.ToString(item.Attributes("units_short").InnerText)
 
-                            If item.Attributes("seasonal_adjustment") IsNot Nothing Then .seasonal_adjustment = Convert.ToString(item.Attributes("seasonal_adjustment").InnerText)
-                            If item.Attributes("seasonal_adjustment_short") IsNot Nothing Then .seasonal_adjustment_short = Convert.ToString(item.Attributes("seasonal_adjustment_short").InnerText)
+                            If item.Attributes("seasonal_adjustment") IsNot Nothing Then ._seasonal_adjustment = Convert.ToString(item.Attributes("seasonal_adjustment").InnerText)
+                            If item.Attributes("seasonal_adjustment_short") IsNot Nothing Then ._seasonal_adjustment_short = Convert.ToString(item.Attributes("seasonal_adjustment_short").InnerText)
 
-                            If item.Attributes("last_updated") IsNot Nothing Then .last_updated = Convert.ToString(item.Attributes("last_updated").InnerText)
-                            If item.Attributes("popularity") IsNot Nothing Then .popularity = Convert.ToInt32(item.Attributes("popularity").InnerText)
+                            If item.Attributes("last_updated") IsNot Nothing Then ._last_updated = Convert.ToString(item.Attributes("last_updated").InnerText)
+                            If item.Attributes("popularity") IsNot Nothing Then ._popularity = Convert.ToInt32(item.Attributes("popularity").InnerText)
 
-                            If item.Attributes("notes") IsNot Nothing Then .notes = Convert.ToString(item.Attributes("notes").InnerText)
+                            If item.Attributes("notes") IsNot Nothing Then ._notes = Convert.ToString(item.Attributes("notes").InnerText)
                         End With
                     End If
                 Next
@@ -1754,9 +1754,9 @@ EndM:
                     If item IsNot Nothing Then
                         rel = New Category
                         With rel
-                            If item("id") IsNot Nothing Then .Category_Id = Convert.ToInt32(item("id"))
-                            If item("name") IsNot Nothing Then .Category_Name = Convert.ToString(item("name"))
-                            If item("parent_id") IsNot Nothing Then .Category_Parent_Id = Convert.ToInt32(item("parent_id"))
+                            If item("id") IsNot Nothing Then ._Category_Id = Convert.ToInt32(item("id"))
+                            If item("name") IsNot Nothing Then ._Category_Name = Convert.ToString(item("name"))
+                            If item("parent_id") IsNot Nothing Then ._Category_Parent_Id = Convert.ToInt32(item("parent_id"))
                         End With
                         sGetSeriesCategories.Add(rel)
                     End If
@@ -1771,9 +1771,9 @@ EndM:
                     If item IsNot Nothing Then
                         rel = New Category
                         With rel
-                            If item.Attributes("id") IsNot Nothing Then .Category_Id = Convert.ToInt32(item.Attributes("id").InnerText)
-                            If item.Attributes("name") IsNot Nothing Then .Category_Name = Convert.ToString(item.Attributes("name").InnerText)
-                            If item.Attributes("parent_id") IsNot Nothing Then .Category_Parent_Id = Convert.ToInt32(item.Attributes("parent_id").InnerText)
+                            If item.Attributes("id") IsNot Nothing Then ._Category_Id = Convert.ToInt32(item.Attributes("id").InnerText)
+                            If item.Attributes("name") IsNot Nothing Then ._Category_Name = Convert.ToString(item.Attributes("name").InnerText)
+                            If item.Attributes("parent_id") IsNot Nothing Then ._Category_Parent_Id = Convert.ToInt32(item.Attributes("parent_id").InnerText)
                         End With
                         sGetSeriesCategories.Add(rel)
                         rel = Nothing
@@ -1920,10 +1920,10 @@ EndM:
                     If item IsNot Nothing Then
                         rel = New Observation
                         With rel
-                            If item("realtime_start") IsNot Nothing Then .RealtimeStart = Convert.ToDateTime(item("realtime_start"))
-                            If item("realtime_end") IsNot Nothing Then .RealtimeEnd = Convert.ToDateTime(item("realtime_end"))
-                            If item("date") IsNot Nothing Then .Observation_Date = Convert.ToDateTime(item("date"))
-                            If item("value") IsNot Nothing Then .Observation_Value = Convert.ToString(item("value"))
+                            If item("realtime_start") IsNot Nothing Then ._RealtimeStart = Convert.ToDateTime(item("realtime_start"))
+                            If item("realtime_end") IsNot Nothing Then ._RealtimeEnd = Convert.ToDateTime(item("realtime_end"))
+                            If item("date") IsNot Nothing Then ._Observation_Date = Convert.ToDateTime(item("date"))
+                            If item("value") IsNot Nothing Then ._Observation_Value = Convert.ToString(item("value"))
                         End With
                         sGetSeriesObservations.Add(rel)
                     End If
@@ -1938,10 +1938,10 @@ EndM:
                     If item IsNot Nothing Then
                         rel = New Observation
                         With rel
-                            If item.Attributes("realtime_start") IsNot Nothing Then .RealtimeStart = Convert.ToDateTime(item.Attributes("realtime_start").InnerText)
-                            If item.Attributes("realtime_end") IsNot Nothing Then .RealtimeEnd = Convert.ToDateTime(item.Attributes("realtime_end").InnerText)
-                            If item.Attributes("date") IsNot Nothing Then .Observation_Date = Convert.ToDateTime(item.Attributes("date").InnerText)
-                            If item.Attributes("value") IsNot Nothing Then .Observation_Value = Convert.ToString(item.Attributes("value").InnerText)
+                            If item.Attributes("realtime_start") IsNot Nothing Then ._RealtimeStart = Convert.ToDateTime(item.Attributes("realtime_start").InnerText)
+                            If item.Attributes("realtime_end") IsNot Nothing Then ._RealtimeEnd = Convert.ToDateTime(item.Attributes("realtime_end").InnerText)
+                            If item.Attributes("date") IsNot Nothing Then ._Observation_Date = Convert.ToDateTime(item.Attributes("date").InnerText)
+                            If item.Attributes("value") IsNot Nothing Then ._Observation_Value = Convert.ToString(item.Attributes("value").InnerText)
                         End With
                         sGetSeriesObservations.Add(rel)
                         rel = Nothing
@@ -2017,14 +2017,14 @@ EndM:
                     If item IsNot Nothing Then
                         rel = New Release
                         With rel
-                            If item("id") IsNot Nothing Then .Release_Id = Convert.ToInt32(item("id"))
-                            If item("name") IsNot Nothing Then .Name = Convert.ToString(item("name"))
+                            If item("id") IsNot Nothing Then ._Release_Id = Convert.ToInt32(item("id"))
+                            If item("name") IsNot Nothing Then ._Name = Convert.ToString(item("name"))
 
-                            If item("realtime_start") IsNot Nothing Then .RealtimeStart = Convert.ToDateTime(item("realtime_start"))
-                            If item("realtime_end") IsNot Nothing Then .RealtimeEnd = Convert.ToDateTime(item("realtime_end"))
+                            If item("realtime_start") IsNot Nothing Then ._RealtimeStart = Convert.ToDateTime(item("realtime_start"))
+                            If item("realtime_end") IsNot Nothing Then ._RealtimeEnd = Convert.ToDateTime(item("realtime_end"))
 
-                            If item("press_release") IsNot Nothing Then .PressRelease = Convert.ToString(item("press_release"))
-                            If item("link") IsNot Nothing Then .Link = Convert.ToString(item("link"))
+                            If item("press_release") IsNot Nothing Then ._PressRelease = Convert.ToString(item("press_release"))
+                            If item("link") IsNot Nothing Then ._Link = Convert.ToString(item("link"))
 
                         End With
                     End If
@@ -2038,14 +2038,14 @@ EndM:
                     If item IsNot Nothing Then
                         rel = New Release
                         With rel
-                            If item.Attributes("id") IsNot Nothing Then .Release_Id = Convert.ToInt32(item.Attributes("id").InnerText)
-                            If item.Attributes("name") IsNot Nothing Then .Name = Convert.ToString(item.Attributes("name").InnerText)
+                            If item.Attributes("id") IsNot Nothing Then ._Release_Id = Convert.ToInt32(item.Attributes("id").InnerText)
+                            If item.Attributes("name") IsNot Nothing Then ._Name = Convert.ToString(item.Attributes("name").InnerText)
 
-                            If item.Attributes("realtime_start") IsNot Nothing Then .RealtimeStart = Convert.ToDateTime(item.Attributes("realtime_start").InnerText)
-                            If item.Attributes("realtime_end") IsNot Nothing Then .RealtimeEnd = Convert.ToDateTime(item.Attributes("realtime_end").InnerText)
+                            If item.Attributes("realtime_start") IsNot Nothing Then ._RealtimeStart = Convert.ToDateTime(item.Attributes("realtime_start").InnerText)
+                            If item.Attributes("realtime_end") IsNot Nothing Then ._RealtimeEnd = Convert.ToDateTime(item.Attributes("realtime_end").InnerText)
 
-                            If item.Attributes("press_release") IsNot Nothing Then .PressRelease = Convert.ToString(item.Attributes("press_release").InnerText)
-                            If item.Attributes("link") IsNot Nothing Then .Link = Convert.ToString(item.Attributes("link").InnerText)
+                            If item.Attributes("press_release") IsNot Nothing Then ._PressRelease = Convert.ToString(item.Attributes("press_release").InnerText)
+                            If item.Attributes("link") IsNot Nothing Then ._Link = Convert.ToString(item.Attributes("link").InnerText)
                         End With
                     End If
                 Next
@@ -2149,28 +2149,28 @@ EndM:
                     If item IsNot Nothing Then
                         rel = New Series
                         With rel
-                            If item("id") IsNot Nothing Then .Id = Convert.ToString(item("id"))
-                            If item("title") IsNot Nothing Then .Title = Convert.ToString(item("title"))
+                            If item("id") IsNot Nothing Then ._Id = Convert.ToString(item("id"))
+                            If item("title") IsNot Nothing Then ._Title = Convert.ToString(item("title"))
 
-                            If item("realtime_start") IsNot Nothing Then .RealtimeStart = Convert.ToDateTime(item("realtime_start"))
-                            If item("realtime_end") IsNot Nothing Then .RealtimeEnd = Convert.ToDateTime(item("realtime_end"))
+                            If item("realtime_start") IsNot Nothing Then ._RealtimeStart = Convert.ToDateTime(item("realtime_start"))
+                            If item("realtime_end") IsNot Nothing Then ._RealtimeEnd = Convert.ToDateTime(item("realtime_end"))
 
-                            If item("observation_start") IsNot Nothing Then .Observation_start = Convert.ToDateTime(item("observation_start"))
-                            If item("observation_end") IsNot Nothing Then .Observation_end = Convert.ToDateTime(item("observation_end"))
+                            If item("observation_start") IsNot Nothing Then ._Observation_start = Convert.ToDateTime(item("observation_start"))
+                            If item("observation_end") IsNot Nothing Then ._Observation_end = Convert.ToDateTime(item("observation_end"))
 
-                            If item("frequency") IsNot Nothing Then .Frequency = Convert.ToString(item("frequency"))
-                            If item("frequency_short") IsNot Nothing Then .Frequency_short = Convert.ToString(item("frequency_short"))
+                            If item("frequency") IsNot Nothing Then ._Frequency = Convert.ToString(item("frequency"))
+                            If item("frequency_short") IsNot Nothing Then ._Frequency_short = Convert.ToString(item("frequency_short"))
 
-                            If item("units") IsNot Nothing Then .units = Convert.ToString(item("units"))
-                            If item("units_short") IsNot Nothing Then .units_short = Convert.ToString(item("units_short"))
+                            If item("units") IsNot Nothing Then ._units = Convert.ToString(item("units"))
+                            If item("units_short") IsNot Nothing Then ._units_short = Convert.ToString(item("units_short"))
 
-                            If item("seasonal_adjustment") IsNot Nothing Then .seasonal_adjustment = Convert.ToString(item("seasonal_adjustment"))
-                            If item("seasonal_adjustment_short") IsNot Nothing Then .seasonal_adjustment_short = Convert.ToString(item("seasonal_adjustment_short"))
+                            If item("seasonal_adjustment") IsNot Nothing Then ._seasonal_adjustment = Convert.ToString(item("seasonal_adjustment"))
+                            If item("seasonal_adjustment_short") IsNot Nothing Then ._seasonal_adjustment_short = Convert.ToString(item("seasonal_adjustment_short"))
 
-                            If item("last_updated") IsNot Nothing Then .last_updated = Convert.ToString(item("last_updated"))
-                            If item("popularity") IsNot Nothing Then .popularity = Convert.ToInt32(item("popularity"))
+                            If item("last_updated") IsNot Nothing Then ._last_updated = Convert.ToString(item("last_updated"))
+                            If item("popularity") IsNot Nothing Then ._popularity = Convert.ToInt32(item("popularity"))
 
-                            If item("notes") IsNot Nothing Then .notes = Convert.ToString(item("notes"))
+                            If item("notes") IsNot Nothing Then ._notes = Convert.ToString(item("notes"))
                         End With
                         sGetSeriesSearch.Add(rel)
                         rel = Nothing
@@ -2185,28 +2185,28 @@ EndM:
                     If item IsNot Nothing Then
                         rel = New Series
                         With rel
-                            If item.Attributes("id") IsNot Nothing Then .Id = Convert.ToString(item.Attributes("id").InnerText)
-                            If item.Attributes("title") IsNot Nothing Then .Title = Convert.ToString(item.Attributes("title").InnerText)
+                            If item.Attributes("id") IsNot Nothing Then ._Id = Convert.ToString(item.Attributes("id").InnerText)
+                            If item.Attributes("title") IsNot Nothing Then ._Title = Convert.ToString(item.Attributes("title").InnerText)
 
-                            If item.Attributes("realtime_start") IsNot Nothing Then .RealtimeStart = Convert.ToDateTime(item.Attributes("realtime_start").InnerText)
-                            If item.Attributes("realtime_end") IsNot Nothing Then .RealtimeEnd = Convert.ToDateTime(item.Attributes("realtime_end").InnerText)
+                            If item.Attributes("realtime_start") IsNot Nothing Then ._RealtimeStart = Convert.ToDateTime(item.Attributes("realtime_start").InnerText)
+                            If item.Attributes("realtime_end") IsNot Nothing Then ._RealtimeEnd = Convert.ToDateTime(item.Attributes("realtime_end").InnerText)
 
-                            If item.Attributes("observation_start") IsNot Nothing Then .Observation_start = Convert.ToDateTime(item.Attributes("observation_start").InnerText)
-                            If item.Attributes("observation_end") IsNot Nothing Then .Observation_end = Convert.ToDateTime(item.Attributes("observation_end").InnerText)
+                            If item.Attributes("observation_start") IsNot Nothing Then ._Observation_start = Convert.ToDateTime(item.Attributes("observation_start").InnerText)
+                            If item.Attributes("observation_end") IsNot Nothing Then ._Observation_end = Convert.ToDateTime(item.Attributes("observation_end").InnerText)
 
-                            If item.Attributes("frequency") IsNot Nothing Then .Frequency = Convert.ToString(item.Attributes("frequency").InnerText)
-                            If item.Attributes("frequency_short") IsNot Nothing Then .Frequency_short = Convert.ToString(item.Attributes("frequency_short").InnerText)
+                            If item.Attributes("frequency") IsNot Nothing Then ._Frequency = Convert.ToString(item.Attributes("frequency").InnerText)
+                            If item.Attributes("frequency_short") IsNot Nothing Then ._Frequency_short = Convert.ToString(item.Attributes("frequency_short").InnerText)
 
-                            If item.Attributes("units") IsNot Nothing Then .units = Convert.ToString(item.Attributes("units").InnerText)
-                            If item.Attributes("units_short") IsNot Nothing Then .units_short = Convert.ToString(item.Attributes("units_short").InnerText)
+                            If item.Attributes("units") IsNot Nothing Then ._units = Convert.ToString(item.Attributes("units").InnerText)
+                            If item.Attributes("units_short") IsNot Nothing Then ._units_short = Convert.ToString(item.Attributes("units_short").InnerText)
 
-                            If item.Attributes("seasonal_adjustment") IsNot Nothing Then .seasonal_adjustment = Convert.ToString(item.Attributes("seasonal_adjustment").InnerText)
-                            If item.Attributes("seasonal_adjustment_short") IsNot Nothing Then .seasonal_adjustment_short = Convert.ToString(item.Attributes("seasonal_adjustment_short").InnerText)
+                            If item.Attributes("seasonal_adjustment") IsNot Nothing Then ._seasonal_adjustment = Convert.ToString(item.Attributes("seasonal_adjustment").InnerText)
+                            If item.Attributes("seasonal_adjustment_short") IsNot Nothing Then ._seasonal_adjustment_short = Convert.ToString(item.Attributes("seasonal_adjustment_short").InnerText)
 
-                            If item.Attributes("last_updated") IsNot Nothing Then .last_updated = Convert.ToString(item.Attributes("last_updated").InnerText)
-                            If item.Attributes("popularity") IsNot Nothing Then .popularity = Convert.ToInt32(item.Attributes("popularity").InnerText)
+                            If item.Attributes("last_updated") IsNot Nothing Then ._last_updated = Convert.ToString(item.Attributes("last_updated").InnerText)
+                            If item.Attributes("popularity") IsNot Nothing Then ._popularity = Convert.ToInt32(item.Attributes("popularity").InnerText)
 
-                            If item.Attributes("notes") IsNot Nothing Then .notes = Convert.ToString(item.Attributes("notes").InnerText)
+                            If item.Attributes("notes") IsNot Nothing Then ._notes = Convert.ToString(item.Attributes("notes").InnerText)
                         End With
                         sGetSeriesSearch.Add(rel)
                         rel = Nothing
@@ -2296,12 +2296,12 @@ EndM:
                     If item IsNot Nothing Then
                         ser = New Tags
                         With ser
-                            If item("name") IsNot Nothing Then .Name = Convert.ToString(item("name"))
-                            If item("group_id") IsNot Nothing Then .GroupId = Convert.ToString(item("group_id"))
-                            If item("notes") IsNot Nothing Then .Notes = Convert.ToString(item("notes"))
-                            If item("created") IsNot Nothing Then .CreatedDate = Convert.ToString(item("created"))
-                            If item("popularity") IsNot Nothing Then .Popularity = Convert.ToInt32(item("popularity"))
-                            If item("series_count") IsNot Nothing Then .SeriesCount = Convert.ToInt32(item("series_count"))
+                            If item("name") IsNot Nothing Then ._Name = Convert.ToString(item("name"))
+                            If item("group_id") IsNot Nothing Then ._GroupId = Convert.ToString(item("group_id"))
+                            If item("notes") IsNot Nothing Then ._Notes = Convert.ToString(item("notes"))
+                            If item("created") IsNot Nothing Then ._CreatedDate = Convert.ToString(item("created"))
+                            If item("popularity") IsNot Nothing Then ._Popularity = Convert.ToInt32(item("popularity"))
+                            If item("series_count") IsNot Nothing Then ._SeriesCount = Convert.ToInt32(item("series_count"))
                         End With
                         sGetSeriesSearchTags.Add(ser)
                     End If
@@ -2316,12 +2316,12 @@ EndM:
                     If item IsNot Nothing Then
                         ser = New Tags
                         With ser
-                            If item.Attributes("name") IsNot Nothing Then .Name = Convert.ToString(item.Attributes("name").InnerText)
-                            If item.Attributes("group_id") IsNot Nothing Then .GroupId = Convert.ToString(item.Attributes("group_id").InnerText)
-                            If item.Attributes("notes") IsNot Nothing Then .Notes = Convert.ToString(item.Attributes("notes").InnerText)
-                            If item.Attributes("created") IsNot Nothing Then .CreatedDate = Convert.ToString(item.Attributes("created").InnerText)
-                            If item.Attributes("popularity") IsNot Nothing Then .Popularity = Convert.ToInt32(item.Attributes("popularity").InnerText)
-                            If item.Attributes("series_count") IsNot Nothing Then .SeriesCount = Convert.ToInt32(item.Attributes("series_count").InnerText)
+                            If item.Attributes("name") IsNot Nothing Then ._Name = Convert.ToString(item.Attributes("name").InnerText)
+                            If item.Attributes("group_id") IsNot Nothing Then ._GroupId = Convert.ToString(item.Attributes("group_id").InnerText)
+                            If item.Attributes("notes") IsNot Nothing Then ._Notes = Convert.ToString(item.Attributes("notes").InnerText)
+                            If item.Attributes("created") IsNot Nothing Then ._CreatedDate = Convert.ToString(item.Attributes("created").InnerText)
+                            If item.Attributes("popularity") IsNot Nothing Then ._Popularity = Convert.ToInt32(item.Attributes("popularity").InnerText)
+                            If item.Attributes("series_count") IsNot Nothing Then ._SeriesCount = Convert.ToInt32(item.Attributes("series_count").InnerText)
                         End With
                         sGetSeriesSearchTags.Add(ser)
                         ser = Nothing
@@ -2410,12 +2410,12 @@ EndM:
                     If item IsNot Nothing Then
                         ser = New Tags
                         With ser
-                            If item("name") IsNot Nothing Then .Name = Convert.ToString(item("name"))
-                            If item("group_id") IsNot Nothing Then .GroupId = Convert.ToString(item("group_id"))
-                            If item("notes") IsNot Nothing Then .Notes = Convert.ToString(item("notes"))
-                            If item("created") IsNot Nothing Then .CreatedDate = Convert.ToString(item("created"))
-                            If item("popularity") IsNot Nothing Then .Popularity = Convert.ToInt32(item("popularity"))
-                            If item("series_count") IsNot Nothing Then .SeriesCount = Convert.ToInt32(item("series_count"))
+                            If item("name") IsNot Nothing Then ._Name = Convert.ToString(item("name"))
+                            If item("group_id") IsNot Nothing Then ._GroupId = Convert.ToString(item("group_id"))
+                            If item("notes") IsNot Nothing Then ._Notes = Convert.ToString(item("notes"))
+                            If item("created") IsNot Nothing Then ._CreatedDate = Convert.ToString(item("created"))
+                            If item("popularity") IsNot Nothing Then ._Popularity = Convert.ToInt32(item("popularity"))
+                            If item("series_count") IsNot Nothing Then ._SeriesCount = Convert.ToInt32(item("series_count"))
                         End With
                         sGetSeriesSearchRelatedTags.Add(ser)
                     End If
@@ -2430,12 +2430,12 @@ EndM:
                     If item IsNot Nothing Then
                         ser = New Tags
                         With ser
-                            If item.Attributes("name") IsNot Nothing Then .Name = Convert.ToString(item.Attributes("name").InnerText)
-                            If item.Attributes("group_id") IsNot Nothing Then .GroupId = Convert.ToString(item.Attributes("group_id").InnerText)
-                            If item.Attributes("notes") IsNot Nothing Then .Notes = Convert.ToString(item.Attributes("notes").InnerText)
-                            If item.Attributes("created") IsNot Nothing Then .CreatedDate = Convert.ToString(item.Attributes("created").InnerText)
-                            If item.Attributes("popularity") IsNot Nothing Then .Popularity = Convert.ToInt32(item.Attributes("popularity").InnerText)
-                            If item.Attributes("series_count") IsNot Nothing Then .SeriesCount = Convert.ToInt32(item.Attributes("series_count").InnerText)
+                            If item.Attributes("name") IsNot Nothing Then ._Name = Convert.ToString(item.Attributes("name").InnerText)
+                            If item.Attributes("group_id") IsNot Nothing Then ._GroupId = Convert.ToString(item.Attributes("group_id").InnerText)
+                            If item.Attributes("notes") IsNot Nothing Then ._Notes = Convert.ToString(item.Attributes("notes").InnerText)
+                            If item.Attributes("created") IsNot Nothing Then ._CreatedDate = Convert.ToString(item.Attributes("created").InnerText)
+                            If item.Attributes("popularity") IsNot Nothing Then ._Popularity = Convert.ToInt32(item.Attributes("popularity").InnerText)
+                            If item.Attributes("series_count") IsNot Nothing Then ._SeriesCount = Convert.ToInt32(item.Attributes("series_count").InnerText)
                         End With
                         sGetSeriesSearchRelatedTags.Add(ser)
                         ser = Nothing
@@ -2515,12 +2515,12 @@ EndM:
                     If item IsNot Nothing Then
                         ser = New Tags
                         With ser
-                            If item("name") IsNot Nothing Then .Name = Convert.ToString(item("name"))
-                            If item("group_id") IsNot Nothing Then .GroupId = Convert.ToString(item("group_id"))
-                            If item("notes") IsNot Nothing Then .Notes = Convert.ToString(item("notes"))
-                            If item("created") IsNot Nothing Then .CreatedDate = Convert.ToString(item("created"))
-                            If item("popularity") IsNot Nothing Then .Popularity = Convert.ToInt32(item("popularity"))
-                            If item("series_count") IsNot Nothing Then .SeriesCount = Convert.ToInt32(item("series_count"))
+                            If item("name") IsNot Nothing Then ._Name = Convert.ToString(item("name"))
+                            If item("group_id") IsNot Nothing Then ._GroupId = Convert.ToString(item("group_id"))
+                            If item("notes") IsNot Nothing Then ._Notes = Convert.ToString(item("notes"))
+                            If item("created") IsNot Nothing Then ._CreatedDate = Convert.ToString(item("created"))
+                            If item("popularity") IsNot Nothing Then ._Popularity = Convert.ToInt32(item("popularity"))
+                            If item("series_count") IsNot Nothing Then ._SeriesCount = Convert.ToInt32(item("series_count"))
                         End With
                         sGetSeriesTags.Add(ser)
                     End If
@@ -2535,12 +2535,12 @@ EndM:
                     If item IsNot Nothing Then
                         ser = New Tags
                         With ser
-                            If item.Attributes("name") IsNot Nothing Then .Name = Convert.ToString(item.Attributes("name").InnerText)
-                            If item.Attributes("group_id") IsNot Nothing Then .GroupId = Convert.ToString(item.Attributes("group_id").InnerText)
-                            If item.Attributes("notes") IsNot Nothing Then .Notes = Convert.ToString(item.Attributes("notes").InnerText)
-                            If item.Attributes("created") IsNot Nothing Then .CreatedDate = Convert.ToString(item.Attributes("created").InnerText)
-                            If item.Attributes("popularity") IsNot Nothing Then .Popularity = Convert.ToInt32(item.Attributes("popularity").InnerText)
-                            If item.Attributes("series_count") IsNot Nothing Then .SeriesCount = Convert.ToInt32(item.Attributes("series_count").InnerText)
+                            If item.Attributes("name") IsNot Nothing Then ._Name = Convert.ToString(item.Attributes("name").InnerText)
+                            If item.Attributes("group_id") IsNot Nothing Then ._GroupId = Convert.ToString(item.Attributes("group_id").InnerText)
+                            If item.Attributes("notes") IsNot Nothing Then ._Notes = Convert.ToString(item.Attributes("notes").InnerText)
+                            If item.Attributes("created") IsNot Nothing Then ._CreatedDate = Convert.ToString(item.Attributes("created").InnerText)
+                            If item.Attributes("popularity") IsNot Nothing Then ._Popularity = Convert.ToInt32(item.Attributes("popularity").InnerText)
+                            If item.Attributes("series_count") IsNot Nothing Then ._SeriesCount = Convert.ToInt32(item.Attributes("series_count").InnerText)
                         End With
                         sGetSeriesTags.Add(ser)
                         ser = Nothing
@@ -2627,28 +2627,28 @@ EndM:
                     If item IsNot Nothing Then
                         rel = New Series
                         With rel
-                            If item("id") IsNot Nothing Then .Id = Convert.ToString(item("id"))
-                            If item("title") IsNot Nothing Then .Title = Convert.ToString(item("title"))
+                            If item("id") IsNot Nothing Then ._Id = Convert.ToString(item("id"))
+                            If item("title") IsNot Nothing Then ._Title = Convert.ToString(item("title"))
 
-                            If item("realtime_start") IsNot Nothing Then .RealtimeStart = Convert.ToDateTime(item("realtime_start"))
-                            If item("realtime_end") IsNot Nothing Then .RealtimeEnd = Convert.ToDateTime(item("realtime_end"))
+                            If item("realtime_start") IsNot Nothing Then ._RealtimeStart = Convert.ToDateTime(item("realtime_start"))
+                            If item("realtime_end") IsNot Nothing Then ._RealtimeEnd = Convert.ToDateTime(item("realtime_end"))
 
-                            If item("observation_start") IsNot Nothing Then .Observation_start = Convert.ToDateTime(item("observation_start"))
-                            If item("observation_end") IsNot Nothing Then .Observation_end = Convert.ToDateTime(item("observation_end"))
+                            If item("observation_start") IsNot Nothing Then ._Observation_start = Convert.ToDateTime(item("observation_start"))
+                            If item("observation_end") IsNot Nothing Then ._Observation_end = Convert.ToDateTime(item("observation_end"))
 
-                            If item("frequency") IsNot Nothing Then .Frequency = Convert.ToString(item("frequency"))
-                            If item("frequency_short") IsNot Nothing Then .Frequency_short = Convert.ToString(item("frequency_short"))
+                            If item("frequency") IsNot Nothing Then ._Frequency = Convert.ToString(item("frequency"))
+                            If item("frequency_short") IsNot Nothing Then ._Frequency_short = Convert.ToString(item("frequency_short"))
 
-                            If item("units") IsNot Nothing Then .units = Convert.ToString(item("units"))
-                            If item("units_short") IsNot Nothing Then .units_short = Convert.ToString(item("units_short"))
+                            If item("units") IsNot Nothing Then ._units = Convert.ToString(item("units"))
+                            If item("units_short") IsNot Nothing Then ._units_short = Convert.ToString(item("units_short"))
 
-                            If item("seasonal_adjustment") IsNot Nothing Then .seasonal_adjustment = Convert.ToString(item("seasonal_adjustment"))
-                            If item("seasonal_adjustment_short") IsNot Nothing Then .seasonal_adjustment_short = Convert.ToString(item("seasonal_adjustment_short"))
+                            If item("seasonal_adjustment") IsNot Nothing Then ._seasonal_adjustment = Convert.ToString(item("seasonal_adjustment"))
+                            If item("seasonal_adjustment_short") IsNot Nothing Then ._seasonal_adjustment_short = Convert.ToString(item("seasonal_adjustment_short"))
 
-                            If item("last_updated") IsNot Nothing Then .last_updated = Convert.ToString(item("last_updated"))
-                            If item("popularity") IsNot Nothing Then .popularity = Convert.ToInt32(item("popularity"))
+                            If item("last_updated") IsNot Nothing Then ._last_updated = Convert.ToString(item("last_updated"))
+                            If item("popularity") IsNot Nothing Then ._popularity = Convert.ToInt32(item("popularity"))
 
-                            If item("notes") IsNot Nothing Then .notes = Convert.ToString(item("notes"))
+                            If item("notes") IsNot Nothing Then ._notes = Convert.ToString(item("notes"))
                         End With
                         sGetSeriesUpdates.Add(rel)
                         rel = Nothing
@@ -2663,28 +2663,28 @@ EndM:
                     If item IsNot Nothing Then
                         rel = New Series
                         With rel
-                            If item.Attributes("id") IsNot Nothing Then .Id = Convert.ToString(item.Attributes("id").InnerText)
-                            If item.Attributes("title") IsNot Nothing Then .Title = Convert.ToString(item.Attributes("title").InnerText)
+                            If item.Attributes("id") IsNot Nothing Then ._Id = Convert.ToString(item.Attributes("id").InnerText)
+                            If item.Attributes("title") IsNot Nothing Then ._Title = Convert.ToString(item.Attributes("title").InnerText)
 
-                            If item.Attributes("realtime_start") IsNot Nothing Then .RealtimeStart = Convert.ToDateTime(item.Attributes("realtime_start").InnerText)
-                            If item.Attributes("realtime_end") IsNot Nothing Then .RealtimeEnd = Convert.ToDateTime(item.Attributes("realtime_end").InnerText)
+                            If item.Attributes("realtime_start") IsNot Nothing Then ._RealtimeStart = Convert.ToDateTime(item.Attributes("realtime_start").InnerText)
+                            If item.Attributes("realtime_end") IsNot Nothing Then ._RealtimeEnd = Convert.ToDateTime(item.Attributes("realtime_end").InnerText)
 
-                            If item.Attributes("observation_start") IsNot Nothing Then .Observation_start = Convert.ToDateTime(item.Attributes("observation_start").InnerText)
-                            If item.Attributes("observation_end") IsNot Nothing Then .Observation_end = Convert.ToDateTime(item.Attributes("observation_end").InnerText)
+                            If item.Attributes("observation_start") IsNot Nothing Then ._Observation_start = Convert.ToDateTime(item.Attributes("observation_start").InnerText)
+                            If item.Attributes("observation_end") IsNot Nothing Then ._Observation_end = Convert.ToDateTime(item.Attributes("observation_end").InnerText)
 
-                            If item.Attributes("frequency") IsNot Nothing Then .Frequency = Convert.ToString(item.Attributes("frequency").InnerText)
-                            If item.Attributes("frequency_short") IsNot Nothing Then .Frequency_short = Convert.ToString(item.Attributes("frequency_short").InnerText)
+                            If item.Attributes("frequency") IsNot Nothing Then ._Frequency = Convert.ToString(item.Attributes("frequency").InnerText)
+                            If item.Attributes("frequency_short") IsNot Nothing Then ._Frequency_short = Convert.ToString(item.Attributes("frequency_short").InnerText)
 
-                            If item.Attributes("units") IsNot Nothing Then .units = Convert.ToString(item.Attributes("units").InnerText)
-                            If item.Attributes("units_short") IsNot Nothing Then .units_short = Convert.ToString(item.Attributes("units_short").InnerText)
+                            If item.Attributes("units") IsNot Nothing Then ._units = Convert.ToString(item.Attributes("units").InnerText)
+                            If item.Attributes("units_short") IsNot Nothing Then ._units_short = Convert.ToString(item.Attributes("units_short").InnerText)
 
-                            If item.Attributes("seasonal_adjustment") IsNot Nothing Then .seasonal_adjustment = Convert.ToString(item.Attributes("seasonal_adjustment").InnerText)
-                            If item.Attributes("seasonal_adjustment_short") IsNot Nothing Then .seasonal_adjustment_short = Convert.ToString(item.Attributes("seasonal_adjustment_short").InnerText)
+                            If item.Attributes("seasonal_adjustment") IsNot Nothing Then ._seasonal_adjustment = Convert.ToString(item.Attributes("seasonal_adjustment").InnerText)
+                            If item.Attributes("seasonal_adjustment_short") IsNot Nothing Then ._seasonal_adjustment_short = Convert.ToString(item.Attributes("seasonal_adjustment_short").InnerText)
 
-                            If item.Attributes("last_updated") IsNot Nothing Then .last_updated = Convert.ToString(item.Attributes("last_updated").InnerText)
-                            If item.Attributes("popularity") IsNot Nothing Then .popularity = Convert.ToInt32(item.Attributes("popularity").InnerText)
+                            If item.Attributes("last_updated") IsNot Nothing Then ._last_updated = Convert.ToString(item.Attributes("last_updated").InnerText)
+                            If item.Attributes("popularity") IsNot Nothing Then ._popularity = Convert.ToInt32(item.Attributes("popularity").InnerText)
 
-                            If item.Attributes("notes") IsNot Nothing Then .notes = Convert.ToString(item.Attributes("notes").InnerText)
+                            If item.Attributes("notes") IsNot Nothing Then ._notes = Convert.ToString(item.Attributes("notes").InnerText)
                         End With
                         sGetSeriesUpdates.Add(rel)
                         rel = Nothing
@@ -2768,7 +2768,7 @@ EndM:
                 For i As Integer = 0 To arr.Count - 1
                     ser = New VintageDate
                     With ser
-                        If arr(i) IsNot Nothing Then .Vintage_Date = Convert.ToDateTime(arr(i))
+                        If arr(i) IsNot Nothing Then ._Vintage_Date = Convert.ToDateTime(arr(i))
                     End With
                     sGetSeriesVintageDates.Add(ser)
                     ser = Nothing
@@ -2781,7 +2781,7 @@ EndM:
                 For i As Integer = 0 To nodeList.Count - 1
                     ser = New VintageDate
                     With ser
-                        If nodeList(i) IsNot Nothing Then .Vintage_Date = Convert.ToDateTime(nodeList(i).InnerText)
+                        If nodeList(i) IsNot Nothing Then ._Vintage_Date = Convert.ToDateTime(nodeList(i).InnerText)
                     End With
                     sGetSeriesVintageDates.Add(ser)
                     ser = Nothing
@@ -2867,11 +2867,11 @@ EndM:
                     If item IsNot Nothing Then
                         ser = New Source
                         With ser
-                            If item("id") IsNot Nothing Then .Id = Convert.ToInt32(item("id"))
-                            If item("name") IsNot Nothing Then .Name = Convert.ToString(item("name"))
-                            If item("realtime_start") IsNot Nothing Then .RealtimeStart = Convert.ToDateTime(item("realtime_start"))
-                            If item("realtime_end") IsNot Nothing Then .RealtimeEnd = Convert.ToDateTime(item("realtime_end"))
-                            If item("link") IsNot Nothing Then .Link = Convert.ToDateTime(item("Link"))
+                            If item("id") IsNot Nothing Then ._ID = Convert.ToInt32(item("id"))
+                            If item("name") IsNot Nothing Then ._Name = Convert.ToString(item("name"))
+                            If item("realtime_start") IsNot Nothing Then ._RealtimeStart = Convert.ToDateTime(item("realtime_start"))
+                            If item("realtime_end") IsNot Nothing Then ._RealtimeEnd = Convert.ToDateTime(item("realtime_end"))
+                            If item("link") IsNot Nothing Then ._Link = Convert.ToDateTime(item("Link"))
                         End With
                         sGetSources.Add(ser)
                     End If
@@ -2886,10 +2886,10 @@ EndM:
                     If item IsNot Nothing Then
                         ser = New Source
                         With ser
-                            If item.Attributes("id") IsNot Nothing Then .Id = Convert.ToInt32(item.Attributes("id").InnerText)
-                            If item.Attributes("name") IsNot Nothing Then .Name = Convert.ToString(item.Attributes("name").InnerText)
-                            If item.Attributes("realtime_start") IsNot Nothing Then .RealtimeStart = Convert.ToDateTime(item.Attributes("realtime_start").InnerText)
-                            If item.Attributes("realtime_end") IsNot Nothing Then .RealtimeEnd = Convert.ToDateTime(item.Attributes("realtime_end").InnerText)
+                            If item.Attributes("id") IsNot Nothing Then ._ID = Convert.ToInt32(item.Attributes("id").InnerText)
+                            If item.Attributes("name") IsNot Nothing Then ._Name = Convert.ToString(item.Attributes("name").InnerText)
+                            If item.Attributes("realtime_start") IsNot Nothing Then ._RealtimeStart = Convert.ToDateTime(item.Attributes("realtime_start").InnerText)
+                            If item.Attributes("realtime_end") IsNot Nothing Then ._RealtimeEnd = Convert.ToDateTime(item.Attributes("realtime_end").InnerText)
                         End With
                         sGetSources.Add(ser)
                         ser = Nothing
@@ -2965,11 +2965,11 @@ EndM:
                     If item IsNot Nothing Then
                         ser = New Source
                         With ser
-                            If item("id") IsNot Nothing Then .Id = Convert.ToInt32(item("id"))
-                            If item("name") IsNot Nothing Then .Name = Convert.ToString(item("name"))
-                            If item("realtime_start") IsNot Nothing Then .RealtimeStart = Convert.ToDateTime(item("realtime_start"))
-                            If item("realtime_end") IsNot Nothing Then .RealtimeEnd = Convert.ToDateTime(item("realtime_end"))
-                            If item("link") IsNot Nothing Then .Link = Convert.ToDateTime(item("Link"))
+                            If item("id") IsNot Nothing Then ._ID = Convert.ToInt32(item("id"))
+                            If item("name") IsNot Nothing Then ._Name = Convert.ToString(item("name"))
+                            If item("realtime_start") IsNot Nothing Then ._RealtimeStart = Convert.ToDateTime(item("realtime_start"))
+                            If item("realtime_end") IsNot Nothing Then ._RealtimeEnd = Convert.ToDateTime(item("realtime_end"))
+                            If item("link") IsNot Nothing Then ._Link = Convert.ToDateTime(item("Link"))
                         End With
                         sGetSource.Add(ser)
                     End If
@@ -2984,10 +2984,10 @@ EndM:
                     If item IsNot Nothing Then
                         ser = New Source
                         With ser
-                            If item.Attributes("id") IsNot Nothing Then .Id = Convert.ToInt32(item.Attributes("id").InnerText)
-                            If item.Attributes("name") IsNot Nothing Then .Name = Convert.ToString(item.Attributes("name").InnerText)
-                            If item.Attributes("realtime_start") IsNot Nothing Then .RealtimeStart = Convert.ToDateTime(item.Attributes("realtime_start").InnerText)
-                            If item.Attributes("realtime_end") IsNot Nothing Then .RealtimeEnd = Convert.ToDateTime(item.Attributes("realtime_end").InnerText)
+                            If item.Attributes("id") IsNot Nothing Then ._ID = Convert.ToInt32(item.Attributes("id").InnerText)
+                            If item.Attributes("name") IsNot Nothing Then ._Name = Convert.ToString(item.Attributes("name").InnerText)
+                            If item.Attributes("realtime_start") IsNot Nothing Then ._RealtimeStart = Convert.ToDateTime(item.Attributes("realtime_start").InnerText)
+                            If item.Attributes("realtime_end") IsNot Nothing Then ._RealtimeEnd = Convert.ToDateTime(item.Attributes("realtime_end").InnerText)
                         End With
                         sGetSource.Add(ser)
                         ser = Nothing
@@ -3070,12 +3070,12 @@ EndM:
                     If item IsNot Nothing Then
                         ser = New Source
                         With ser
-                            If item("id") IsNot Nothing Then .Id = Convert.ToInt32(item("id"))
-                            If item("name") IsNot Nothing Then .Name = Convert.ToString(item("name"))
-                            If item("realtime_start") IsNot Nothing Then .RealtimeStart = Convert.ToDateTime(item("realtime_start"))
-                            If item("realtime_end") IsNot Nothing Then .RealtimeEnd = Convert.ToDateTime(item("realtime_end"))
-                            If item("press_release") IsNot Nothing Then .PressRelease = Convert.ToString(item("press_release"))
-                            If item("link") IsNot Nothing Then .Link = Convert.ToString(item("link"))
+                            If item("id") IsNot Nothing Then ._ID = Convert.ToInt32(item("id"))
+                            If item("name") IsNot Nothing Then ._Name = Convert.ToString(item("name"))
+                            If item("realtime_start") IsNot Nothing Then ._RealtimeStart = Convert.ToDateTime(item("realtime_start"))
+                            If item("realtime_end") IsNot Nothing Then ._RealtimeEnd = Convert.ToDateTime(item("realtime_end"))
+                            If item("press_release") IsNot Nothing Then ._PressRelease = Convert.ToString(item("press_release"))
+                            If item("link") IsNot Nothing Then ._Link = Convert.ToString(item("link"))
                         End With
                         sGetSourceReleases.Add(ser)
                     End If
@@ -3090,12 +3090,12 @@ EndM:
                     If item IsNot Nothing Then
                         ser = New Source
                         With ser
-                            If item.Attributes("id") IsNot Nothing Then .Id = Convert.ToInt32(item.Attributes("id").InnerText)
-                            If item.Attributes("name") IsNot Nothing Then .Name = Convert.ToString(item.Attributes("name").InnerText)
-                            If item.Attributes("realtime_start") IsNot Nothing Then .RealtimeStart = Convert.ToDateTime(item.Attributes("realtime_start").InnerText)
-                            If item.Attributes("realtime_end") IsNot Nothing Then .RealtimeEnd = Convert.ToDateTime(item.Attributes("realtime_end").InnerText)
-                            If item.Attributes("press_release") IsNot Nothing Then .PressRelease = Convert.ToString(item.Attributes("press_release").InnerText)
-                            If item.Attributes("link") IsNot Nothing Then .Link = Convert.ToString(item.Attributes("link").InnerText)
+                            If item.Attributes("id") IsNot Nothing Then ._ID = Convert.ToInt32(item.Attributes("id").InnerText)
+                            If item.Attributes("name") IsNot Nothing Then ._Name = Convert.ToString(item.Attributes("name").InnerText)
+                            If item.Attributes("realtime_start") IsNot Nothing Then ._RealtimeStart = Convert.ToDateTime(item.Attributes("realtime_start").InnerText)
+                            If item.Attributes("realtime_end") IsNot Nothing Then ._RealtimeEnd = Convert.ToDateTime(item.Attributes("realtime_end").InnerText)
+                            If item.Attributes("press_release") IsNot Nothing Then ._PressRelease = Convert.ToString(item.Attributes("press_release").InnerText)
+                            If item.Attributes("link") IsNot Nothing Then ._Link = Convert.ToString(item.Attributes("link").InnerText)
                         End With
                         sGetSourceReleases.Add(ser)
                         ser = Nothing
@@ -3189,12 +3189,12 @@ EndM:
                     If item IsNot Nothing Then
                         ser = New Tags
                         With ser
-                            If item("name") IsNot Nothing Then .Name = Convert.ToString(item("name"))
-                            If item("group_id") IsNot Nothing Then .GroupId = Convert.ToString(item("group_id"))
-                            If item("notes") IsNot Nothing Then .Notes = Convert.ToString(item("notes"))
-                            If item("created") IsNot Nothing Then .CreatedDate = Convert.ToString(item("created"))
-                            If item("popularity") IsNot Nothing Then .Popularity = Convert.ToInt32(item("popularity"))
-                            If item("series_count") IsNot Nothing Then .SeriesCount = Convert.ToInt32(item("series_count"))
+                            If item("name") IsNot Nothing Then ._Name = Convert.ToString(item("name"))
+                            If item("group_id") IsNot Nothing Then ._GroupId = Convert.ToString(item("group_id"))
+                            If item("notes") IsNot Nothing Then ._Notes = Convert.ToString(item("notes"))
+                            If item("created") IsNot Nothing Then ._CreatedDate = Convert.ToString(item("created"))
+                            If item("popularity") IsNot Nothing Then ._Popularity = Convert.ToInt32(item("popularity"))
+                            If item("series_count") IsNot Nothing Then ._SeriesCount = Convert.ToInt32(item("series_count"))
                         End With
                         sGetTags.Add(ser)
                     End If
@@ -3210,12 +3210,12 @@ EndM:
                     If item IsNot Nothing Then
                         ser = New Tags
                         With ser
-                            If item.Attributes("name") IsNot Nothing Then .Name = Convert.ToString(item.Attributes("name").InnerText)
-                            If item.Attributes("group_id") IsNot Nothing Then .GroupId = Convert.ToString(item.Attributes("group_id").InnerText)
-                            If item.Attributes("notes") IsNot Nothing Then .Notes = Convert.ToString(item.Attributes("notes").InnerText)
-                            If item.Attributes("created") IsNot Nothing Then .CreatedDate = Convert.ToString(item.Attributes("created").InnerText)
-                            If item.Attributes("popularity") IsNot Nothing Then .Popularity = Convert.ToInt32(item.Attributes("popularity").InnerText)
-                            If item.Attributes("series_count") IsNot Nothing Then .SeriesCount = Convert.ToInt32(item.Attributes("series_count").InnerText)
+                            If item.Attributes("name") IsNot Nothing Then ._Name = Convert.ToString(item.Attributes("name").InnerText)
+                            If item.Attributes("group_id") IsNot Nothing Then ._GroupId = Convert.ToString(item.Attributes("group_id").InnerText)
+                            If item.Attributes("notes") IsNot Nothing Then ._Notes = Convert.ToString(item.Attributes("notes").InnerText)
+                            If item.Attributes("created") IsNot Nothing Then ._CreatedDate = Convert.ToString(item.Attributes("created").InnerText)
+                            If item.Attributes("popularity") IsNot Nothing Then ._Popularity = Convert.ToInt32(item.Attributes("popularity").InnerText)
+                            If item.Attributes("series_count") IsNot Nothing Then ._SeriesCount = Convert.ToInt32(item.Attributes("series_count").InnerText)
                         End With
                         sGetTags.Add(ser)
                         ser = Nothing
@@ -3304,12 +3304,12 @@ EndM:
                     If item IsNot Nothing Then
                         ser = New Tags
                         With ser
-                            If item("name") IsNot Nothing Then .Name = Convert.ToString(item("name"))
-                            If item("group_id") IsNot Nothing Then .GroupId = Convert.ToString(item("group_id"))
-                            If item("notes") IsNot Nothing Then .Notes = Convert.ToString(item("notes"))
-                            If item("created") IsNot Nothing Then .CreatedDate = Convert.ToString(item("created"))
-                            If item("popularity") IsNot Nothing Then .Popularity = Convert.ToInt32(item("popularity"))
-                            If item("series_count") IsNot Nothing Then .SeriesCount = Convert.ToInt32(item("series_count"))
+                            If item("name") IsNot Nothing Then ._Name = Convert.ToString(item("name"))
+                            If item("group_id") IsNot Nothing Then ._GroupId = Convert.ToString(item("group_id"))
+                            If item("notes") IsNot Nothing Then ._Notes = Convert.ToString(item("notes"))
+                            If item("created") IsNot Nothing Then ._CreatedDate = Convert.ToString(item("created"))
+                            If item("popularity") IsNot Nothing Then ._Popularity = Convert.ToInt32(item("popularity"))
+                            If item("series_count") IsNot Nothing Then ._SeriesCount = Convert.ToInt32(item("series_count"))
                         End With
                         sGetRelatedTags.Add(ser)
                     End If
@@ -3324,12 +3324,12 @@ EndM:
                     If item IsNot Nothing Then
                         ser = New Tags
                         With ser
-                            If item.Attributes("name") IsNot Nothing Then .Name = Convert.ToString(item.Attributes("name").InnerText)
-                            If item.Attributes("group_id") IsNot Nothing Then .GroupId = Convert.ToString(item.Attributes("group_id").InnerText)
-                            If item.Attributes("notes") IsNot Nothing Then .Notes = Convert.ToString(item.Attributes("notes").InnerText)
-                            If item.Attributes("created") IsNot Nothing Then .CreatedDate = Convert.ToString(item.Attributes("created").InnerText)
-                            If item.Attributes("popularity") IsNot Nothing Then .Popularity = Convert.ToInt32(item.Attributes("popularity").InnerText)
-                            If item.Attributes("series_count") IsNot Nothing Then .SeriesCount = Convert.ToInt32(item.Attributes("series_count").InnerText)
+                            If item.Attributes("name") IsNot Nothing Then ._Name = Convert.ToString(item.Attributes("name").InnerText)
+                            If item.Attributes("group_id") IsNot Nothing Then ._GroupId = Convert.ToString(item.Attributes("group_id").InnerText)
+                            If item.Attributes("notes") IsNot Nothing Then ._Notes = Convert.ToString(item.Attributes("notes").InnerText)
+                            If item.Attributes("created") IsNot Nothing Then ._CreatedDate = Convert.ToString(item.Attributes("created").InnerText)
+                            If item.Attributes("popularity") IsNot Nothing Then ._Popularity = Convert.ToInt32(item.Attributes("popularity").InnerText)
+                            If item.Attributes("series_count") IsNot Nothing Then ._SeriesCount = Convert.ToInt32(item.Attributes("series_count").InnerText)
                         End With
                         sGetRelatedTags.Add(ser)
                         ser = Nothing
@@ -3416,28 +3416,28 @@ EndM:
                     If item IsNot Nothing Then
                         rel = New Series
                         With rel
-                            If item("id") IsNot Nothing Then .Id = Convert.ToString(item("id"))
-                            If item("title") IsNot Nothing Then .Title = Convert.ToString(item("title"))
+                            If item("id") IsNot Nothing Then ._Id = Convert.ToString(item("id"))
+                            If item("title") IsNot Nothing Then ._Title = Convert.ToString(item("title"))
 
-                            If item("realtime_start") IsNot Nothing Then .RealtimeStart = Convert.ToDateTime(item("realtime_start"))
-                            If item("realtime_end") IsNot Nothing Then .RealtimeEnd = Convert.ToDateTime(item("realtime_end"))
+                            If item("realtime_start") IsNot Nothing Then ._RealtimeStart = Convert.ToDateTime(item("realtime_start"))
+                            If item("realtime_end") IsNot Nothing Then ._RealtimeEnd = Convert.ToDateTime(item("realtime_end"))
 
-                            If item("observation_start") IsNot Nothing Then .Observation_start = Convert.ToDateTime(item("observation_start"))
-                            If item("observation_end") IsNot Nothing Then .Observation_end = Convert.ToDateTime(item("observation_end"))
+                            If item("observation_start") IsNot Nothing Then ._Observation_start = Convert.ToDateTime(item("observation_start"))
+                            If item("observation_end") IsNot Nothing Then ._Observation_end = Convert.ToDateTime(item("observation_end"))
 
-                            If item("frequency") IsNot Nothing Then .Frequency = Convert.ToString(item("frequency"))
-                            If item("frequency_short") IsNot Nothing Then .Frequency_short = Convert.ToString(item("frequency_short"))
+                            If item("frequency") IsNot Nothing Then ._Frequency = Convert.ToString(item("frequency"))
+                            If item("frequency_short") IsNot Nothing Then ._Frequency_short = Convert.ToString(item("frequency_short"))
 
-                            If item("units") IsNot Nothing Then .units = Convert.ToString(item("units"))
-                            If item("units_short") IsNot Nothing Then .units_short = Convert.ToString(item("units_short"))
+                            If item("units") IsNot Nothing Then ._units = Convert.ToString(item("units"))
+                            If item("units_short") IsNot Nothing Then ._units_short = Convert.ToString(item("units_short"))
 
-                            If item("seasonal_adjustment") IsNot Nothing Then .seasonal_adjustment = Convert.ToString(item("seasonal_adjustment"))
-                            If item("seasonal_adjustment_short") IsNot Nothing Then .seasonal_adjustment_short = Convert.ToString(item("seasonal_adjustment_short"))
+                            If item("seasonal_adjustment") IsNot Nothing Then ._seasonal_adjustment = Convert.ToString(item("seasonal_adjustment"))
+                            If item("seasonal_adjustment_short") IsNot Nothing Then ._seasonal_adjustment_short = Convert.ToString(item("seasonal_adjustment_short"))
 
-                            If item("last_updated") IsNot Nothing Then .last_updated = Convert.ToString(item("last_updated"))
-                            If item("popularity") IsNot Nothing Then .popularity = Convert.ToInt32(item("popularity"))
+                            If item("last_updated") IsNot Nothing Then ._last_updated = Convert.ToString(item("last_updated"))
+                            If item("popularity") IsNot Nothing Then ._popularity = Convert.ToInt32(item("popularity"))
 
-                            If item("notes") IsNot Nothing Then .notes = Convert.ToString(item("notes"))
+                            If item("notes") IsNot Nothing Then ._notes = Convert.ToString(item("notes"))
                         End With
                         sGetTagSeries.Add(rel)
                     End If
@@ -3452,28 +3452,28 @@ EndM:
                     If item IsNot Nothing Then
                         rel = New Series
                         With rel
-                            If item.Attributes("id") IsNot Nothing Then .Id = Convert.ToString(item.Attributes("id").InnerText)
-                            If item.Attributes("title") IsNot Nothing Then .Title = Convert.ToString(item.Attributes("title").InnerText)
+                            If item.Attributes("id") IsNot Nothing Then ._Id = Convert.ToString(item.Attributes("id").InnerText)
+                            If item.Attributes("title") IsNot Nothing Then ._Title = Convert.ToString(item.Attributes("title").InnerText)
 
-                            If item.Attributes("realtime_start") IsNot Nothing Then .RealtimeStart = Convert.ToDateTime(item.Attributes("realtime_start").InnerText)
-                            If item.Attributes("realtime_end") IsNot Nothing Then .RealtimeEnd = Convert.ToDateTime(item.Attributes("realtime_end").InnerText)
+                            If item.Attributes("realtime_start") IsNot Nothing Then ._RealtimeStart = Convert.ToDateTime(item.Attributes("realtime_start").InnerText)
+                            If item.Attributes("realtime_end") IsNot Nothing Then ._RealtimeEnd = Convert.ToDateTime(item.Attributes("realtime_end").InnerText)
 
-                            If item.Attributes("observation_start") IsNot Nothing Then .Observation_start = Convert.ToDateTime(item.Attributes("observation_start").InnerText)
-                            If item.Attributes("observation_end") IsNot Nothing Then .Observation_end = Convert.ToDateTime(item.Attributes("observation_end").InnerText)
+                            If item.Attributes("observation_start") IsNot Nothing Then ._Observation_start = Convert.ToDateTime(item.Attributes("observation_start").InnerText)
+                            If item.Attributes("observation_end") IsNot Nothing Then ._Observation_end = Convert.ToDateTime(item.Attributes("observation_end").InnerText)
 
-                            If item.Attributes("frequency") IsNot Nothing Then .Frequency = Convert.ToString(item.Attributes("frequency").InnerText)
-                            If item.Attributes("frequency_short") IsNot Nothing Then .Frequency_short = Convert.ToString(item.Attributes("frequency_short").InnerText)
+                            If item.Attributes("frequency") IsNot Nothing Then ._Frequency = Convert.ToString(item.Attributes("frequency").InnerText)
+                            If item.Attributes("frequency_short") IsNot Nothing Then ._Frequency_short = Convert.ToString(item.Attributes("frequency_short").InnerText)
 
-                            If item.Attributes("units") IsNot Nothing Then .units = Convert.ToString(item.Attributes("units").InnerText)
-                            If item.Attributes("units_short") IsNot Nothing Then .units_short = Convert.ToString(item.Attributes("units_short").InnerText)
+                            If item.Attributes("units") IsNot Nothing Then ._units = Convert.ToString(item.Attributes("units").InnerText)
+                            If item.Attributes("units_short") IsNot Nothing Then ._units_short = Convert.ToString(item.Attributes("units_short").InnerText)
 
-                            If item.Attributes("seasonal_adjustment") IsNot Nothing Then .seasonal_adjustment = Convert.ToString(item.Attributes("seasonal_adjustment").InnerText)
-                            If item.Attributes("seasonal_adjustment_short") IsNot Nothing Then .seasonal_adjustment_short = Convert.ToString(item.Attributes("seasonal_adjustment_short").InnerText)
+                            If item.Attributes("seasonal_adjustment") IsNot Nothing Then ._seasonal_adjustment = Convert.ToString(item.Attributes("seasonal_adjustment").InnerText)
+                            If item.Attributes("seasonal_adjustment_short") IsNot Nothing Then ._seasonal_adjustment_short = Convert.ToString(item.Attributes("seasonal_adjustment_short").InnerText)
 
-                            If item.Attributes("last_updated") IsNot Nothing Then .last_updated = Convert.ToString(item.Attributes("last_updated").InnerText)
-                            If item.Attributes("popularity") IsNot Nothing Then .popularity = Convert.ToInt32(item.Attributes("popularity").InnerText)
+                            If item.Attributes("last_updated") IsNot Nothing Then ._last_updated = Convert.ToString(item.Attributes("last_updated").InnerText)
+                            If item.Attributes("popularity") IsNot Nothing Then ._popularity = Convert.ToInt32(item.Attributes("popularity").InnerText)
 
-                            If item.Attributes("notes") IsNot Nothing Then .notes = Convert.ToString(item.Attributes("notes").InnerText)
+                            If item.Attributes("notes") IsNot Nothing Then ._notes = Convert.ToString(item.Attributes("notes").InnerText)
                         End With
                         sGetTagSeries.Add(rel)
                         rel = Nothing

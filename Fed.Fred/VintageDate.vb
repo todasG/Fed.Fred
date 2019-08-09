@@ -8,15 +8,15 @@ Imports System.Linq
 Public Class VintageDate
 
 
-    Private pVintageDate As DateTime
+    Friend _Vintage_Date As DateTime
 
-    Public Property Vintage_Date() As DateTime
+    Public ReadOnly Property Vintage_Date() As DateTime
         Get
-            Return pVintageDate
+            Return _Vintage_Date
         End Get
-        Set(ByVal value As DateTime)
-            pVintageDate = value
-        End Set
+        'Set(ByVal value As DateTime)
+        '    pVintageDate = value
+        'End Set
     End Property
 
 End Class

@@ -2,12 +2,12 @@
 
 Public Class Source
 
-        Private pID As Integer
-        Private pName As String
-        Private pPressRelease As String
-        Private pRealtimeStart As Date
-        Private pRealtimeEnd As Date
-        Private pLink As String
+    Friend _ID As Integer
+    Friend _Name As String
+    Friend _PressRelease As String
+    Friend _RealtimeStart As Date
+    Friend _RealtimeEnd As Date
+    Friend _Link As String
 
     Public Enum Source
         Id
@@ -35,58 +35,58 @@ Public Class Source
         realtime_end
     End Enum
 
-    Public Property Id() As Integer
-            Get
-                Return pID
-            End Get
-            Set(ByVal value As Integer)
-                pID = value
-            End Set
-        End Property
+    Public ReadOnly Property Id() As Integer
+        Get
+            Return _ID
+        End Get
+        'Set(ByVal value As Integer)
+        '    pID = value
+        'End Set
+    End Property
 
-        Public Property Name() As String
-            Get
-                Return pName
-            End Get
-            Set(ByVal value As String)
-                pName = value
-            End Set
-        End Property
+    Public ReadOnly Property Name() As String
+        Get
+            Return _Name
+        End Get
+        'Set(ByVal value As String)
+        '    pName = value
+        'End Set
+    End Property
 
-        Public Property PressRelease() As String
-            Get
-                Return pPressRelease
-            End Get
-            Set(ByVal value As String)
-                pPressRelease = value
-            End Set
-        End Property
+    Public ReadOnly Property PressRelease() As String
+        Get
+            Return _PressRelease
+        End Get
+        'Set(ByVal value As String)
+        '    pPressRelease = value
+        'End Set
+    End Property
 
-        Public Property RealtimeStart() As DateTime
-            Get
-                Return pRealtimeStart
-            End Get
-            Set(ByVal value As DateTime)
-                pRealtimeStart = value
-            End Set
-        End Property
+    Public ReadOnly Property RealtimeStart() As DateTime
+        Get
+            Return _RealtimeStart
+        End Get
+        'Set(ByVal value As DateTime)
+        '    pRealtimeStart = value
+        'End Set
+    End Property
 
-        Public Property RealtimeEnd() As DateTime
-            Get
-                Return pRealtimeEnd
-            End Get
-            Set(ByVal value As DateTime)
-                pRealtimeEnd = value
-            End Set
-        End Property
+    Public ReadOnly Property RealtimeEnd() As DateTime
+        Get
+            Return _RealtimeEnd
+        End Get
+        'Set(ByVal value As DateTime)
+        '    pRealtimeEnd = value
+        'End Set
+    End Property
 
-        Public Property Link() As String
-            Get
-                Return pLink
-            End Get
-            Set(ByVal value As String)
-                pLink = value
-            End Set
-        End Property
+    Public ReadOnly Property Link() As String
+        Get
+            Return _Link
+        End Get
+        'Set(ByVal value As String)
+        '    pLink = value
+        'End Set
+    End Property
 
-    End Class
+End Class

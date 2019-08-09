@@ -6,10 +6,10 @@ Imports System.Text
 
 Public Class Observation
 
-        Private pRealtimeStart As DateTime
-        Private pRealtimeEnd As DateTime
-        Private pDate As DateTime
-        Private pValue As Double
+    Friend _RealtimeStart As DateTime
+    Friend _RealtimeEnd As DateTime
+    Friend _Observation_Date As DateTime
+    Friend _Observation_Value As Double
 
 
     Public Enum Aggregation_Method
@@ -113,52 +113,52 @@ Public Class Observation
     ''' The start of the real-time period.
     ''' </summary>
     ''' <returns></returns>
-    Public Property RealtimeStart() As DateTime
-            Get
-                Return pRealtimeStart
-            End Get
-            Set(ByVal value As DateTime)
-                pRealtimeStart = value
-            End Set
-        End Property
+    Public ReadOnly Property RealtimeStart() As DateTime
+        Get
+            Return _RealtimeStart
+        End Get
+        'Set(ByVal value As DateTime)
+        '    pRealtimeStart = value
+        'End Set
+    End Property
 
-        ''' <summary>
-        ''' The end of the real-time period. 
-        ''' </summary>
-        ''' <returns></returns>
-        Public Property RealtimeEnd() As DateTime
-            Get
-                Return pRealtimeEnd
-            End Get
-            Set(ByVal value As DateTime)
-                pRealtimeEnd = value
-            End Set
-        End Property
+    ''' <summary>
+    ''' The end of the real-time period. 
+    ''' </summary>
+    ''' <returns></returns>
+    Public ReadOnly Property RealtimeEnd() As DateTime
+        Get
+            Return _RealtimeEnd
+        End Get
+        'Set(ByVal value As DateTime)
+        '    pRealtimeEnd = value
+        'End Set
+    End Property
 
-        ''' <summary>
-        ''' The date the observation covers.
-        ''' </summary>
-        ''' <returns></returns>
-        Public Property Observation_Date() As DateTime
-            Get
-                Return pDate
-            End Get
-            Set(ByVal value As DateTime)
-                pDate = value
-            End Set
-        End Property
+    ''' <summary>
+    ''' The date the observation covers.
+    ''' </summary>
+    ''' <returns></returns>
+    Public ReadOnly Property Observation_Date() As DateTime
+        Get
+            Return _Observation_Date
+        End Get
+        'Set(ByVal value As DateTime)
+        '    pDate = value
+        'End Set
+    End Property
 
-        ''' <summary>
-        ''' The value of the observation.
-        ''' </summary>
-        ''' <returns></returns>
-        Public Property Observation_Value() As Double
-            Get
-                Return pValue
-            End Get
-            Set(ByVal value As Double)
-                pValue = value
-            End Set
-        End Property
+    ''' <summary>
+    ''' The value of the observation.
+    ''' </summary>
+    ''' <returns></returns>
+    Public ReadOnly Property Observation_Value() As Double
+        Get
+            Return _Observation_Value
+        End Get
+        'Set(ByVal value As Double)
+        '    pValue = value
+        'End Set
+    End Property
 
 End Class

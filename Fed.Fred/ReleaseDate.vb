@@ -3,9 +3,9 @@ Imports System
 
 Public Class ReleaseDate
 
-    Private pReleaseId As Integer
-    Private pReleaseName As String
-    Private pReleaseDate As DateTime
+    Friend _ReleaseId As Integer
+    Friend _ReleaseName As String
+    Friend _ReleaseDate As DateTime
 
 
     Public Enum OrderBy
@@ -18,31 +18,31 @@ Public Class ReleaseDate
         release_date
     End Enum
 
-    Public Property ReleaseId() As Integer
+    Public ReadOnly Property ReleaseId() As Integer
         Get
-            Return pReleaseId
+            Return _ReleaseId
         End Get
-        Set(ByVal value As Integer)
-            pReleaseId = value
-        End Set
+        'Set(ByVal value As Integer)
+        '    pReleaseId = value
+        'End Set
     End Property
 
-    Public Property ReleaseName() As String
+    Public ReadOnly Property ReleaseName() As String
         Get
-            Return pReleaseName
+            Return _ReleaseName
         End Get
-        Set(ByVal value As String)
-            pReleaseName = value
-        End Set
+        'Set(ByVal value As String)
+        '    pReleaseName = value
+        'End Set
     End Property
 
-    Public Property ReleaseDate() As DateTime
+    Public ReadOnly Property ReleaseDate() As DateTime
         Get
-            Return pReleaseDate
+            Return _ReleaseDate
         End Get
-        Set(ByVal value As DateTime)
-            pReleaseDate = value
-        End Set
+        'Set(ByVal value As DateTime)
+        '    pReleaseDate = value
+        'End Set
     End Property
 
 
